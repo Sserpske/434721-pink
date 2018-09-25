@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Кочура](https://up.htmlacademy.ru/adaptive/15/user/434721).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Выхрыстюк](https://htmlacademy.ru/profile/id568747).
 
 ---
 

@@ -38,22 +38,36 @@
           </fieldset>
           <fieldset class="form__achievement achievement">
             <legend class="achievement__title">Ваши безбашенные достижения в&nbsp;путешествии</legend>
-            <input type="checkbox" name="selfie"  id="selfie" checked>
-            <label for="selfie" class="achievement__checkbox">Сделал селфи с&nbsp;акулой</label>
-            <input type="checkbox" name="sunburned"  id="sunburned" checked>
-            <label for="sunburned" class="achievement__checkbox">Обгорел на&nbsp;пляже</label>
-            <input type="checkbox" name="chuck"  id="chuck">
-            <label for="chuck" class="achievement__checkbox">Видел Чака Норриса</label>
-            <input type="checkbox" name="souvenir"  id="souvenir">
-            <label for="souvenir" class="achievement__checkbox">Накупил сувениров</label>
-            <input type="checkbox" name="tower"  id="tower" checked>
-            <label for="tower" class="achievement__checkbox">Удержал башню</label>
-            <input type="checkbox" name="hotel"  id="hotel">
-            <label for="hotel" class="achievement__checkbox">Разгромил отель</label>
+            <ul class="achievement__list">
+              <li class="achievement__item">
+                <input type="checkbox" name="selfie"  id="selfie" checked>
+                <label for="selfie" class="achievement__checkbox">Сделал селфи с&nbsp;акулой</label>
+              </li>
+              <li class="achievement__item">
+                <input type="checkbox" name="sunburned"  id="sunburned" checked>
+                <label for="sunburned" class="achievement__checkbox">Обгорел на&nbsp;пляже</label>
+              </li>
+              <li class="achievement__item">
+                <input type="checkbox" name="chuck"  id="chuck">
+                <label for="chuck" class="achievement__checkbox">Видел Чака Норриса</label>
+              </li>
+              <li class="achievement__item">
+                <input type="checkbox" name="souvenir"  id="souvenir">
+                <label for="souvenir" class="achievement__checkbox">Накупил сувениров</label>
+              </li>
+              <li class="achievement__item">
+                <input type="checkbox" name="tower"  id="tower" checked>
+                <label for="tower" class="achievement__checkbox">Удержал башню</label>
+              </li>
+              <li class="achievement__item">
+                <input type="checkbox" name="hotel"  id="hotel">
+                <label for="hotel" class="achievement__checkbox">Разгромил отель</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="form__contacts contacts">
             <label for="telephone" class="contacts__label label">Номер телефона</label>
-            <input type="telephone" class="contacts__input contacts__input--telephone input" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
+            <input type="tel" class="contacts__input contacts__input--telephone input" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
             <label for="mail" class="contacts__label label">адрес почты</label>
             <input type="email" class="contacts__input contacts__input--mail input" name="mail" id="mail" required placeholder="Введите почту *">
           </fieldset>

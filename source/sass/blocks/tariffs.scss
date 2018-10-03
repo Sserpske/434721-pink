@@ -1,0 +1,35 @@
+.tariffs {
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.tariffs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tariffs__header {
+  background-color: #283645;
+  color: #ffffff;
+  text-align: center;
+}
+
+.tariffs__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.tariffs__price {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.tariffs__wrapper {
+  background-color: #f2f2f2;
+}
+
+.tariffs__description {
+  background-color: #ffffff;
+  color: #283645;
+}

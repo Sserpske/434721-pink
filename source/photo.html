@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <meta charset="utf-8">
     <title>Конкурс</title>
   </head>
@@ -97,14 +99,14 @@
       <div class="photo-page__leadend">
         <p class="photo-page__leadend-text">Затмите их&nbsp;всех! Выкладывайте все, что накопилось в&nbsp;телефоне!</p>
       </div>
-      <section class="photo-page__load">
+      <section class="photo-page__photo-load photo-load">
         <h2 class="visually-hedden">Загрузка фотографий</h2>
-        <form action="https://echo.htmlacademy.ru" class="photo-page__form form-load" method="post">
+        <form action="https://echo.htmlacademy.ru" class="photo-load__form" method="post">
           <div class="form-load__picture">
-            <img src="http://placehold.it/150x100" alt="фотография" class="form-load__image" width="150" height="100">
+            <img src="http://placehold.it/150x100" alt="фотография" class="photo-load__image" width="150" height="100">
           </div>
-          <div class="form-load__tools">
-            <div class="form-load__tool form-load__tool--crop controls">
+          <div class="photo-load__tools">
+            <div class="photo-load__tool photo-load__tool--crop controls">
               <div class="controls__scale">
                 <div class="controls__bar">
                   <div class="controls__toggle">
@@ -113,8 +115,8 @@
               </div>
             </div>
           </div>
-          <div class="form-load__tools">
-            <div class="form-load__tool form-load__tool--fill controls">
+          <div class="photo-load__tools">
+            <div class="photo-load__tool form-load__tool--fill controls">
               <div class="controls__scale">
                 <div class="controls__bar">
                   <div class="controls__toggle">
@@ -123,8 +125,8 @@
               </div>
             </div>
           </div>
-          <div class="form-load__tools">
-            <div class="form-load__tool form-load__tool--contrast controls">
+          <div class="photo-load__tools">
+            <div class="photo-load__tool form-load__tool--contrast controls">
               <div class="controls__scale">
                 <div class="controls__bar">
                   <div class="controls__toggle">
@@ -133,8 +135,8 @@
               </div>
             </div>
           </div>
-          <button type="submit" class="form-load__button">Запостить</button>
-          <button type="reset" class="form-load__button">Отмена</button>
+          <button type="submit" class="photo-load__button">Запостить</button>
+          <button type="reset" class="photo-load__button">Отмена</button>
         </form>
       </section>
     </main>

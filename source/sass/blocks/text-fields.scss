@@ -1,0 +1,15 @@
+.text-fields {
+  border: 0;
+}
+
+.text-fields__label {
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.text-fields__input::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}

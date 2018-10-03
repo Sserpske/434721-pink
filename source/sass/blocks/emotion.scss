@@ -1,0 +1,16 @@
+.emotion {
+  border: 0;
+}
+
+.emotion__title {
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.emotion__text::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}

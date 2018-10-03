@@ -1,0 +1,17 @@
+.photo-load {
+  background-color: #f2f2f2;
+}
+
+.photo-load__button {
+  background-color: #f2f2f2;
+  font-size: 18px;
+  line-height: 18px;
+  color: #d22856;
+  border: 3px solid #d22856;
+  border-radius: 20px;
+}
+
+.photo-load__button:disabled {
+  color: rgba(#283645, 0.1);
+  border-color: rgba(#283645, 0.1);
+}

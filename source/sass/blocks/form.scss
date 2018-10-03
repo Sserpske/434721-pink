@@ -1,0 +1,22 @@
+.form__background {
+  background-color: #474f58;
+  position: relative;
+  width: 320px;
+  height: 237px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.form__title {
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+}
+
+.form__text {
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+}

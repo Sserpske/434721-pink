@@ -1,7 +1,15 @@
 .lead-main {
   font-size: 24px;
-  line-height: 36px;
+  line-height: 29px;
   font-weight: 300;
   text-align: center;
   color: #283645;
+  padding: 40px 58px 32px 58px;
+}
+
+.lead-main__text {
+  margin: 0;
+  &:first-child {
+    margin-bottom: 29px;
+  }
 }

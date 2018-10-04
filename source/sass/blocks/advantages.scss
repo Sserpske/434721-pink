@@ -1,6 +1,10 @@
 .advantages {
   background-color: #f2f2f2;
   text-align: center;
+  padding: 63px 20px 287px 20px;
+  background-image: url('../../img/iphone-screen-mobile@1x.png');
+  background-repeat: no-repeat;
+  background-position: center 109%;
 }
 
 .advantages__list {
@@ -9,6 +13,12 @@
   padding: 0;
 }
 
+.advantages__description {
+  margin: 0;
+  margin-bottom: 31px;
+}
+
 .advantages__title {
-  font-style: 18px;
+  font-size: 18px;
+  margin-bottom: 12px;
 }

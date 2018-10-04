@@ -3,11 +3,42 @@
   color: #ffffff;
   font-weight: 300;
   text-align: center;
+  padding-top: 28px;
 }
 
-.application__button a {
+.application__button {
+  display: inline-block;
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
-  line-height: 27px;
+  line-height: 18px;
+  padding: 14px 36px 17px 36px;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  margin-bottom: 32px;
+}
+
+.application__wrapper {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 16px;
+}
+
+.application__icon {
+  display: inline-block;
+  &--apple {
+  width: 46.21px;
+  height: 56.753px;
+  background-image: url('../../img/logo-apple.svg');
+  }
+  &--android {
+    width: 42.084px;
+    height: 47.041px;
+    background-image: url('../../img/logo-android.svg');
+  }
+  &--windows {
+    width: 43.922px;
+    height: 41.992px;
+    background-image: url('../../img/logo-microsoft.svg');
+  }
 }

@@ -2,20 +2,47 @@
   text-align: center;
 }
 
+.contacts {
+  padding: 17px 30px 25px 30px;
+}
+
 .contacts__lead {
   color: #283645;
   font-size: 24px;
   font-weight: 300;
+  line-height: 29px;
+  margin-bottom: 34px;
+}
+
+.contacts__item {
+  margin-bottom: 20px;
 }
 
 .contacts__text {
   font-size: 18px;
   font-weight: 700;
   color: #283645;
+  margin: 0;
 }
 
 .contacts__content {
   font-size: 24px;
+  line-height: 29px;
   font-weight: 300;
   color: #d22856;
+}
+
+.contacts__content--address {
+  font-style: normal;
+}
+.page-footer__map {
+  height: 200px;
+  background-color: #f2f2f2;
+  background-image: url("../../img/bg-triangle-white-footer.svg"),
+  url("../../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto,320px auto;
+  background-position: 50% 0, 50% bottom;
+  font-size: 0;
+  line-height: 0;
 }

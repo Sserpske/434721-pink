@@ -5,14 +5,18 @@
   height: 170px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center -66px;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 .photo-page__title {
   font-size: 24px;
   font-weight: 300;
+  line-height: 30px;
   color: #ffffff;
   text-align: center;
+  margin: 0;
 }
 
 .photo-page__lead-text,

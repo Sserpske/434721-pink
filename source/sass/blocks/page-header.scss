@@ -4,9 +4,12 @@
   font-weight: 700;
   text-transform: uppercase;
   background-color: #283645;
-  text-align: center;
   position: relative;
   z-index: 1;
+}
+
+.main-nav {
+  text-align: center;
 }
 
 .site-list {
@@ -14,6 +17,14 @@
   margin: 0;
   padding: 0;
 }
+
+// .main-nav a:not(.site-list__item--active):hover {
+//   color: #d22856;
+// }
+
+// .site-list__item a {
+//   color: #ffffff;
+// }
 
 .site-list__item a {
   color: #ffffff;

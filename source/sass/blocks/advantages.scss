@@ -1,10 +1,25 @@
 .advantages {
+  position: relative;
   background-color: #f2f2f2;
   text-align: center;
   padding: 63px 20px 287px 20px;
-  background-image: url('../../img/iphone-screen-mobile@1x.png');
+  background-image: url("../../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center 109%;
+}
+
+// косой фон
+.advantages::before {
+  content: "";
+  width: 320px;
+  height: 25px;
+  position: absolute;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
+  left: 0;
+  top: 0;
 }
 
 .advantages__list {

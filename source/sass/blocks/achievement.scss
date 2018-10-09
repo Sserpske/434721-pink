@@ -1,0 +1,21 @@
+.achievement {
+  border: 0;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.achievement__title {
+  line-height: 18px;
+  color: #d22856;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.achievement__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}

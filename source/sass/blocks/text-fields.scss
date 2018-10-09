@@ -1,0 +1,36 @@
+.text-fields {
+  border: 0;
+  padding: 14px 18px;
+}
+
+.text-fields__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text-fields__label {
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+  margin-left: 22px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.text-fields__input::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.text-fields__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 21px;
+  border: 2px solid #e5e5e5;
+}
+
+.text-fields__item {
+  margin-bottom: 18px;
+}

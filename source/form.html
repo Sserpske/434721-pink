@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="utf-8">
     <title>Конкурс</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <a href="" class="page-header__logo">
-        <img src="http://placehold.it/150x100" alt="Логотип PINK" class="page-header__logo-image" width="150" height="100">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+          <g>
+            <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+            <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+            <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+            <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+          </g>
+        </svg>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="index.html">Главная</a></li>
-            <li class="site-list__item"><a href="#">Фотографии</a></li>
-            <li class="site-list__item site-list__item--active"><a href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+            <li class="site-list__item site-list__item--active"><a>Конкурс</a></li>
             <li class="site-list__item"><a href="#">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="form">
+    <main class="form container">
       <div class="form__wrapper">
         <div class="form__background">
           <h1 class="form__title">Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк</h1>
         </div>
         <form action="https://echo.htmlacademy.ru" class="form__inner-wrapper" method="post">
-          <p class="form__text">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту! Пожалуйста, заполните</p>
+          <p class="form__text">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту!</p>
           <fieldset class="form__text-fields text-fields">
-            <label for="surname" class="text-fields__label label">Фамилия:</label>
-            <input type="text" class="text-fields__input text-fields__input--surname input" name="surname" id="surname" required placeholder="Укажите фамилию *">
-            <label for="name" class="text-fields__label label">Имя:</label>
-            <input type="text" class="text-fields__input text-fields__input--name input" name="name" id="name" required placeholder="Введите ваше имя *">
-            <label for="patronymic" class="text-fields__label label">Отчество:</label>
-            <input type="text" class="text-fields__input text-fields__input--patronymic input" name="patronymic" id="patronymic" placeholder="Ну&nbsp;и&nbsp;отчество тоже">
+            <ul class="text-fields__list">
+              <li class="text-fields__item">
+                <label for="surname" class="text-fields__label label">Фамилия:</label>
+                <input type="text" class="text-fields__input text-fields__input--surname input" name="surname" id="surname" required placeholder="Укажите фамилию *">
+              </li>
+              <li class="text-fields__item">
+                <label for="name" class="text-fields__label label">Имя:</label>
+                <input type="text" class="text-fields__input text-fields__input--name input" name="name" id="name" required placeholder="Введите ваше имя *">
+              </li>
+              <li class="text-fields__item">
+                <label for="patronymic" class="text-fields__label label">Отчество:</label>
+                <input type="text" class="text-fields__input text-fields__input--patronymic input" name="patronymic" id="patronymic" placeholder="Ну&nbsp;и&nbsp;отчество тоже">
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="form__achievement achievement">
             <legend class="achievement__title">Ваши безбашенные достижения в&nbsp;путешествии</legend>
@@ -65,20 +81,28 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__contacts contacts">
-            <label for="telephone" class="contacts__label label">Номер телефона</label>
-            <input type="tel" class="contacts__input contacts__input--telephone input" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
-            <label for="mail" class="contacts__label label">адрес почты</label>
-            <input type="email" class="contacts__input contacts__input--mail input" name="mail" id="mail" required placeholder="Введите почту *">
+          <fieldset class="form__contacts form-contacts">
+            <label for="telephone" class="form-contacts__label label">Номер телефона</label>
+            <input type="tel" class="form-contacts__input form-contacts__input--telephone input" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
+            <label for="mail" class="form-contacts__label label">адрес почты</label>
+            <input type="email" class="form-contacts__input form-contacts__input--mail input" name="mail" id="mail" required placeholder="Введите почту *">
           </fieldset>
           <fieldset class="form__application-type application-type">
             <legend class="application-type__title">С&nbsp;каким приложением путешествовали?</legend>
-            <input type="radio" name="application-type" id="ios" checked>
-            <label for="ios" class="application-type__radio">Pink для iOS</label>
-            <input type="radio" name="application-type" id="android">
-            <label for="android" class="application-type__radio">Pink на&nbsp;Android</label>
-            <input type="radio" name="application-type" id="windows">
-            <label for="windows" class="application-type__radio">Windows Phone</label>
+            <ul class="application-type__list">
+              <li class="application-type__item">
+                <input type="radio" name="application-type" id="ios" checked>
+                <label for="ios" class="application-type__radio">Pink для iOS</label>
+              </li>
+              <li class="application-type__item">
+                <input type="radio" name="application-type" id="android">
+                <label for="android" class="application-type__radio">Pink на&nbsp;Android</label>
+              </li>
+              <li class="application-type__item">
+                <input type="radio" name="application-type" id="windows">
+                <label for="windows" class="application-type__radio">Windows Phone</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="form__emotion emotion">
             <legend class="emotion__title">Опишите свои эмоции</legend>
@@ -101,9 +125,9 @@
         <button class="pop-up__close  btn">OK</button>
       </div>
     </main>
-    <footer class="footer-inner">
+    <footer class="footer-inner container">
       <a href="" class="footer-inner__logo">
-        <img src="http://placehold.it/150x100" alt="Логотип PINK" class="footer-inner__logo-image" width="150" height="100">
+        <span class="visually-hidden">Логотип Pink</span>
       </a>
       <div class="footer-inner__social social">
         <a href="#" class="social__link social__link--twitter"><span class="visually-hidden">twitter</span></a>
@@ -111,7 +135,7 @@
         <a href="#" class="social__link social__link--youtube"><span class="visually-hidden">youtube</span></a>
       </div>
       <div class="footer-inner__copyright">
-        <span>Разработано</span>
+        <span class="copyright__text">Разработано</span>
         <a href="#" class="footer-inner__academy-logo"><span class="visually-hiden">HTML Academy</span></a>
       </div>
     </footer>

@@ -1,0 +1,35 @@
+.photo-page__background {
+  background-color: #474f58;
+  position: relative;
+  width: 320px;
+  height: 172px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -66px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.photo-page__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+.photo-page__lead-text,
+.photo-page__leadend-text {
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+}
+
+.photo-page__lead {
+  padding: 33px;
+}
+
+.photo-page__leadend {
+  padding: 28px 10px;
+}

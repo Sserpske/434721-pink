@@ -36,13 +36,25 @@
   font-style: normal;
 }
 .page-footer__map {
+  position: relative;
   height: 200px;
   background-color: #f2f2f2;
   background-image: url("../../img/bg-triangle-white-footer.svg"),
   url("../../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-size: 100% auto,320px auto;
-  background-position: 50% 0, 50% bottom;
+  background-size: 100% auto, 100% auto;
+  background-position: 0 0, 50% bottom;
   font-size: 0;
   line-height: 0;
+}
+
+.page-footer__map::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-image: url("../../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  bottom: 35%;
+  left: 44%;
 }

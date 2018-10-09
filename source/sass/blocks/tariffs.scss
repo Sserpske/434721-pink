@@ -1,9 +1,12 @@
 .tariffs {
-  position: relative;
   line-height: 30px;
   text-transform: uppercase;
   padding-top: 90px;
   background-color: #f2f2f2;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
 }
 
 .tariffs__list {
@@ -43,17 +46,4 @@
 .tariffs__toggles {
   text-align: center;
   padding: 35px;
-}
-
-.tariffs::before {
-  content: "";
-  width: 320px;
-  height: 25px;
-  position: absolute;
-  background-image: url("../../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  background-size: 101% auto;
-  background-position: 50% 0;
-  left: 0;
-  top: 0;
 }

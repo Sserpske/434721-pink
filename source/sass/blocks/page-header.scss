@@ -1,16 +1,18 @@
-.page-header {
-  display: none;
-}
+.no-active {
+  .main-nav {
+    display: none;
+  }
 
-// временно находится здесь
-.dropdown-nojs {
-  display: block;
+  .page-header__logo-wrapper {
+    background-color: #ccc;
+  }
 }
 
 .page-header__logo-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding-top: 22px;
   padding-bottom: 17px;
   background-color: #283645;
@@ -21,7 +23,25 @@
 .page-header__toggle {
   width: 23.867px;
   height: 23.867px;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
 }
+
+@media (max-width: $tablet-width) {
+  .page-header__logo-tablet {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-mobile {
+    display: none;
+  }
+  .page-header__logo-tablet {
+    display: block;
+  }
+  .page-header__logo-wrapper {
+    padding-top: 28px;
+    padding-bottom: 41px;
+  }
+}
+
+

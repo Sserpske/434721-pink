@@ -1,0 +1,35 @@
+$screen-sm-max: 576px;
+
+// Small tablets (portrait view)
+$screen-md-max: 660px;
+
+// Tablets and small desktops
+$screen-lg-max: 1019px;
+
+
+// Small devices
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+@mixin media($size) {
+  @media (max-width: #{$size}px) {
+    @content;
+  }
+}

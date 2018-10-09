@@ -11,6 +11,31 @@
   background-position: 5% bottom, center bottom;
   background-color: white;
   background-size: auto, cover;
+  @include md {
+    min-height: 619px;
+    background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
+    background-position: center bottom, center bottom;
+    background-size: auto, 182%;
+  }
+}
+
+.application__available {
+  font-weight: 300;
+  @include md {
+    font-size: 18px;
+    margin-top: 32px;
+  }
+}
+
+.application__lead {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 48px;
+  display: none;
+  margin-bottom: 30px;
+  @include md {
+    display: block;
+  }
 }
 
 .application__button {
@@ -24,6 +49,10 @@
   border: 3px solid #ffffff;
   border-radius: 30px;
   margin-bottom: 32px;
+  @include md {
+    min-width: 300px;
+    margin-bottom: 42px;
+  }
 }
 
 .application__wrapper {
@@ -33,22 +62,26 @@
   text-align: center;
   padding-top: 28px;
   padding-bottom: 16px;
+  @include md {
+    padding-top: 54px;
+    padding-left: 20px;
+    padding-bottom: 92px;
+    position: relative;
+    width: 340px;
+    background-color: transparent;
+    z-index: 2;
+  }
 }
-
-// логотипы ОС
-// .application__wrapper div {
-//   display: flex;
-//   width: 250px;
-//   justify-content: space-around;
-//   align-items: center
-// }
 
 .application__icon {
   display: inline-block;
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
   &--apple {
-  width: 45.21px;
-  height: 56.753px;
-  background-image: url('../../img/logo-apple.svg');
+    width: 45.21px;
+    height: 56.753px;
+    background-image: url('../../img/logo-apple.svg');
   }
   &--android {
     width: 42.084px;
@@ -59,5 +92,12 @@
     width: 43.922px;
     height: 41.992px;
     background-image: url('../../img/logo-microsoft.svg');
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .application__main-background {
+    position: absolute;
+    width: 100%;
   }
 }

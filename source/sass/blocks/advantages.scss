@@ -17,12 +17,20 @@
   text-align: center;
   color: #283645;
   padding: 40px 58px 32px 58px;
+  @include md {
+    padding: 50px 20px 47px 20px;
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .advantages__lead-text {
   margin: 0;
   &:first-child {
     margin-bottom: 29px;
+    @include md {
+      margin-bottom: 0;
+    }
   }
 }
 

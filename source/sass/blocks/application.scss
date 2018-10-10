@@ -1,18 +1,19 @@
 .application {
-
+  position: relative;
 }
 
 .application__main-background {
   background-color: #474f58;
   position: relative;
-  min-height: 396px;
+  min-height: 462px;
   background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: 5% bottom, center bottom;
   background-color: white;
   background-size: auto, cover;
   @include md {
-    min-height: 619px;
+    width: 100%;
+    height: 100%;
     background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
     background-position: center bottom, center bottom;
     background-size: auto, 182%;
@@ -63,7 +64,7 @@
   padding-top: 28px;
   padding-bottom: 16px;
   @include md {
-    padding-top: 54px;
+    padding-top: 162px;
     padding-left: 20px;
     padding-bottom: 92px;
     position: relative;

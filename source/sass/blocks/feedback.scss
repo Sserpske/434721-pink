@@ -3,10 +3,26 @@
   text-align: center;
   padding-top: 42px;
   padding-bottom: 44px;
+  @include md {
+    padding-top: 34px;
+    padding-bottom: 16px;
+  }
+}
+
+.feedback__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  @include md {
+    width: 620px;
+  }
 }
 
 .feedback__item {
   margin: 0;
+  @include md {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .feedback__title {
@@ -14,8 +30,37 @@
   text-decoration: none;
   font-style: normal;
   font-weight: 700;
+  @include md {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+}
+
+.feedback__title-description {
+  color: #283645;
+  display: none;
+  margin: 0;
+  margin-bottom: 22px;
+  @include md {
+    display: block;
+  }
 }
 
 .feedback__description {
   margin-top: 11px;
+  margin-bottom: 20px;
+  @include md {
+    font-size: 18px;
+    order: -1;
+    margin-bottom: 35px;
+  }
+}
+
+.feedback__toggle {
+  width: 12px;
+  height: 12px;
+  border: 3px solid #283645;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 7px;
 }

@@ -1,11 +1,5 @@
-.no-active {
-  .main-nav {
-    display: none;
-  }
-
-  .page-header__logo-wrapper {
-    background-color: #ccc;
-  }
+.page-header__svg--closed {
+  display: none;
 }
 
 .page-header__logo-wrapper {
@@ -20,9 +14,34 @@
   margin-bottom: 1px;
 }
 
-.page-header__toggle {
-  width: 23.867px;
-  height: 23.867px;
+.page-header {
+  width: 100%;
+}
+
+.page-header__menu--closed {
+  position: absolute;
+  z-index: 3;
+  .main-nav {
+    display: none;
+  }
+  .page-header__svg--closed {
+    display: block;
+  }
+  .page-header__svg--opened {
+    display: none;
+  }
+  .page-header__logo-wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: none;
+  }
+}
+
+.page-header__menu--opened {
+  position: absolute;
+  z-index: 3;
+  .page-header__svg--opened {
+    display: block;
+  }
 }
 
 @media (max-width: $tablet-width) {

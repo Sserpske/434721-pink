@@ -3,7 +3,6 @@
 }
 
 .page-footer__contacts {
-  // padding: 17px 30px 25px 30px;
   width: 280px;
   margin: 0 auto;
   @include md {
@@ -86,6 +85,7 @@
   display: none;
   @include md {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 20px;

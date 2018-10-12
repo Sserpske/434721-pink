@@ -1,6 +1,21 @@
 .application-type {
-  border: 0;
   background-color: #f2f2f2;
+  padding: 30px 0;
+  @include md {
+    order: 2;
+    background-color: transparent;
+  }
+}
+
+.application-type__field {
+  width: 280px;
+  margin: 0 auto;
+  border: 0;
+  @include md {
+    width: 620px;
+    border: 2px solid #e5e5e5;
+    padding: 30px;
+  }
 }
 
 .application-type__title {
@@ -8,10 +23,18 @@
   color: #d22856;
   text-transform: uppercase;
   text-align: center;
+  padding: 0;
+  @include md {
+    padding: 0 20px;
+  }
 }
 
 .application-type__radio {
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+}
+
+.application-type__list {
+  @include list-none
 }

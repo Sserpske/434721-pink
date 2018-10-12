@@ -1,28 +1,59 @@
 .form__background {
   background-color: #474f58;
   position: relative;
-  width: 320px;
-  height: 171px;
+  width: 100%;
+  min-height: 171px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -66px;
-  padding: 30px;
-  box-sizing: border-box;
+  background-size: cover;
+  @include md {
+    min-height: 330px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+  }
 }
 
 .form__title {
+  width: 280px;
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
   color: #ffffff;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+  padding: 30px 0;
+  @include md {
+    font-size: 50px;
+    line-height: 60px;
+    width: 480px;
+    padding-top: 70px;
+  }
 }
 
 .form__text {
+  width: 280px;
   line-height: 30px;
   text-align: center;
   color: #283645;
-  margin: 0;
-  padding: 45px 20px 20px 20px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 20px;
+  @include md {
+    font-size: 18px;
+    width: 500px;
+  }
+}
+
+.form__text-hidden {
+  display: none;
+  @include md {
+    display: inline;
+  }
+}
+
+.form__inner-wrapper {
+  @include md {
+    display: flex;
+    flex-direction: column;
+  }
 }

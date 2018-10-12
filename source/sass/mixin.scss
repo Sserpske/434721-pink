@@ -33,3 +33,9 @@ $screen-lg-max: 1019px;
     @content;
   }
 }
+
+@mixin list-none {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

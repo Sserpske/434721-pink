@@ -1,19 +1,22 @@
 .photo-load {
   background-color: #f2f2f2;
-  min-height: 720px;
-  padding: 20px;
+  padding: 20px 0;
+}
+
+.photo-load__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .photo-load__button {
   background-color: #f2f2f2;
   font-size: 18px;
-  line-height: 18px;
   font-weight: 700;
   color: #d22856;
   border: 3px solid #d22856;
   border-radius: 30px;
-  width: 100%;
-  padding: 16px 0;
+  width: 280px;
+  padding: 15px 0;
   margin-bottom: 12px;
 }
 
@@ -24,4 +27,5 @@
 
 .photo-load__image {
   display: block;
+  margin-bottom: 20px;
 }

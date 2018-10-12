@@ -1,5 +1,6 @@
 .application {
   position: relative;
+  background-color: #1d2631;
 }
 
 .application__main-background {
@@ -17,6 +18,26 @@
     background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
     background-position: center bottom, center bottom;
     background-size: auto, 182%;
+  }
+}
+
+.application__wrapper {
+  margin: 0 auto;
+  color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 16px;
+  width: 280px;
+  @include md {
+    padding-top: 162px;
+    padding-left: 20px;
+    padding-bottom: 92px;
+    position: relative;
+    width: 340px;
+    background-color: transparent;
+    z-index: 2;
+    margin: 0;
   }
 }
 
@@ -56,23 +77,7 @@
   }
 }
 
-.application__wrapper {
-  background-color: #1d2631;
-  color: #ffffff;
-  font-weight: 300;
-  text-align: center;
-  padding-top: 28px;
-  padding-bottom: 16px;
-  @include md {
-    padding-top: 162px;
-    padding-left: 20px;
-    padding-bottom: 92px;
-    position: relative;
-    width: 340px;
-    background-color: transparent;
-    z-index: 2;
-  }
-}
+
 
 .application__icon {
   display: inline-block;

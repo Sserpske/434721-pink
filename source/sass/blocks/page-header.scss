@@ -64,3 +64,8 @@
 }
 
 
+.page-header__menu--closed + .page-main {
+  .application__main-background {
+    min-height: 100px;
+  }
+}

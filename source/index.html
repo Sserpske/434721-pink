@@ -137,43 +137,44 @@
         </div>
       </section>
       <section class="tariffs">
-        <div class="tariffs__wrapper slider"> <!-- - table -->
-          <h2 class="visually-hidden">Тарифы</h2>
-          <ul class="tariffs__name-list table-row"> <!-- table row -->
-            <li class="tariffs__header-cell table-cell">  <!-- table-cell -->
-              <p class="tariffs__name">База</p>
-              <p class="tariffs__price">1,99 USD</p>
-            </li>
-            <li class="tariffs__header-cell table-cell">
-              <p class="tariffs__name">Стандарт</p>
-              <p class="tariffs__price">3,99 USD</p>
-            </li>
-            <li class="tariffs__header-cell table-cell">
-              <p class="tariffs__name">АНЛИМ</p>
-              <p class="tariffs__price">9,99 USD</p>
-            </li>
-          </ul>
-          <ul class="tariffs__pink-list table-row">
-            <li class="tariffs__pink-item table-cell">Розовый фильтр</li>
-            <li class="tariffs__pink-item table-cell">Розовый фильтр</li>
-            <li class="tariffs__pink-item table-cell">Розовый фильтр</li>
-          </ul>
-          <ul class="tariffs__smile-list table-row">
-            <li class="tariffs__smile-item table-cell">Смайлики</li>
-            <li class="tariffs__smile-item table-cell">Смайлики</li>
-            <li class="tariffs__smile-item table-cell">Смайлики</li>
-          </ul>
-          <ul class="tariffs__comment-list table-row">
-            <li class="tariffs__comment-item table-cell">Комментарии</li>
-            <li class="tariffs__comment-item table-cell">Комментарии</li>
-            <li class="tariffs__comment-item table-cell">Комментарии</li>
-          </ul>
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="tariffs__wrapper slider">
+          <table class="tariffs__list">
+            <thead class="tariffs__list-head">
+              <tr>
+                <th class="tariffs__name tariffs__name--mob-hidden"></th>
+                <th class="tariffs__name">База<p>1,99 USD</p></th>
+                <th class="tariffs__name">Стандарт<p>3,99 USD</p></th>
+                <th class="tariffs__name">Анлим<p>9,99 USD</p></th>
+              </tr>
+            </thead>
+            <tbody class="tariffs__list-body">
+              <tr>
+                <td class="tariffs__option tariffs__option--mob-hidden">Розовый фильтр</td>
+                <td class="tariffs__option tariffs__option--yes">Розовый фильтр</td>
+                <td class="tariffs__option tariffs__option--yes">Розовый фильтр</td>
+                <td class="tariffs__option tariffs__option--yes">Розовый фильтр</td>
+              </tr>
+              <tr>
+                <td class="tariffs__option tariffs__option--mob-hidden">Смайлики</td>
+                <td class="tariffs__option tariffs__option--no">Смайлики</td>
+                <td class="tariffs__option tariffs__option--yes">Смайлики</td>
+                <td class="tariffs__option tariffs__option--yes">Смайлики</td>
+              </tr>
+              <tr>
+                <td class="tariffs__option tariffs__option--mob-hidden">Комментарии</td>
+                <td class="tariffs__option tariffs__option--no">Комментарии</td>
+                <td class="tariffs__option tariffs__option--no">Комментарии</td>
+                <td class="tariffs__option tariffs__option--yes">Комментарии</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="tariffs__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
         </div>
-        <div class="tariffs__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-         </div>
       </section>
     </main>
     <footer class="page-footer">

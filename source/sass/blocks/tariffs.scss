@@ -1,38 +1,103 @@
-// .tariffs__wrapper {
-//   display: table;
-//   border-collapse: collapse;
-//   width: 100%;
-//   overflow: hidden;
-// }
+.tariffs {
+  background-color: #f2f2f2;
+  padding: 91px 0 35px 0;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  background-position: 0 0;
+}
 
-// .table-row {
-//   display: table-row;
-// }
+.tariffs__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include md {
+    width: 620px;
+    display: block;
+    margin: 0 auto;
+  }
+}
 
-// .table-cell {
-//   display: table-cell;
-//   color: #283645;
-//   border: 2px solid #e5e5e5;
-// }
+.tariffs__list {
+  border-collapse: collapse;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
 
-// .tariffs {
-//   line-height: 30px;
-//   text-transform: uppercase;
-//   background-color: #f2f2f2;
-// }
+.tariffs__list-head {
+  background-color: $blue;
+  color: #ffffff;
+}
 
-// .tariffs__name {
-//   font-size: 18px;
-//   color: #ffffff;
-//   font-weight: 700;
-// }
+.tariffs__list-body {
+  background-color: #ffffff;
+  color: $blue;
+}
 
-// .tariffs__price {
-//   font-size: 24px;
-//   color: #ffffff;
-//   font-weight: 300;
-// }
+.tariffs__name {
+  font-size: 18px;
+  padding-top: 19px;
+}
 
-// .tariffs__header-cell {
-//   background-color: #283645;
-// }
+.tariffs__name p {
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 8px;
+  margin-bottom: 22px;
+}
+
+.tariffs__name, .tariffs__option {
+  min-width: 278px;
+  @include md {
+    min-width: 0;
+    width: 152px;
+  }
+}
+
+.tariffs__option {
+  border: 2px solid #e5e5e5;
+  border-top: none;
+  padding: 18px 20px 17px 21px;
+}
+
+.tariffs__name {
+  border-left: 2px solid #e5e5e5;
+}
+
+.tariffs__name:nth-child(2) {
+  border-left: none;
+}
+
+.tariffs__name--mob-hidden {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.tariffs__option--mob-hidden, .tariffs__name--mob-hidden {
+  display: none;
+  @include md {
+    display: table-cell;
+  }
+}
+
+.tariffs__option--mob-hidden {
+  @include md {
+    border-top: 2px solid #e5e5e5;
+  }
+}
+
+.tariffs__option--yes {
+  background-image: url("../../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 23px;
+  background-position: 229px 18px;
+}
+
+.tariffs__option--no {
+  background-image: url("../../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: 230px 15px;
+}

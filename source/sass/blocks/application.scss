@@ -6,7 +6,7 @@
 .application__main-background {
   background-color: #474f58;
   position: relative;
-  min-height: 462px;
+  min-height: 396px;
   background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: 5% bottom, center bottom;
@@ -31,8 +31,7 @@
   padding-bottom: 16px;
   width: 280px;
   @include md {
-    padding-top: 162px;
-    padding-left: 20px;
+    padding-top: 54px;
     padding-bottom: 92px;
     position: relative;
     width: 340px;
@@ -58,6 +57,7 @@
   margin-bottom: 30px;
   @include md {
     display: block;
+    padding: 0 50px;
   }
 }
 

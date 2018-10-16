@@ -2,13 +2,11 @@
   background-color: #474f58;
   position: relative;
   width: 100%;
-  min-height: 171px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center -66px;
+  background-position: center top;
   background-size: cover;
   @include md {
-    min-height: 330px;
     background-image: url("../../img/bg-back-tablet@1x.jpg");
   }
 }
@@ -21,12 +19,12 @@
   color: #ffffff;
   text-align: center;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 30px 0 81px 0;
   @include md {
     width: 620px;
     font-size: 50px;
     line-height: 60px;
-    padding: 50px 0;
+    padding: 70px 0 140px 0;
   }
 }
 

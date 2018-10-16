@@ -11,6 +11,7 @@
   width: 280px;
   margin: 0 auto;
   border: 0;
+  padding: 0;
   @include md {
     width: 620px;
     border: 2px solid #e5e5e5;
@@ -24,6 +25,7 @@
   text-transform: uppercase;
   text-align: center;
   padding: 0;
+  margin-bottom: 39px;
   @include md {
     padding: 0 20px;
   }
@@ -37,4 +39,38 @@
 
 .application-type__list {
   @include list-none
+}
+
+.application-type__item input {
+  display: none;
+}
+
+.application-type__radio {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 45px;
+  padding-left: 69px;
+  cursor: pointer;
+  &::before {
+    content: "";
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 20px;
+    left: 0;
+    top: -4px;
+  }
+}
+
+.application-type__item input:checked + .application-type__radio::after {
+  content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: #d22856;
+    border-radius: 20px;
+    left: 12px;
+    top: 8px;
 }

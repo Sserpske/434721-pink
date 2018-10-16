@@ -15,14 +15,6 @@
   padding: 0;
 }
 
-// .main-nav a:not(.site-list__item--active):hover {
-//   color: #d22856;
-// }
-
-// .site-list__item a {
-//   color: #ffffff;
-// }
-
 .main-nav__item a {
   color: #ffffff;
   &:hover {
@@ -31,6 +23,10 @@
   &:active {
     color: rgba(#ffffff, 0.3);
   }
+}
+
+.main-nav__item--active a:hover {
+  color: #ffffff;
 }
 
 .main-nav__item {

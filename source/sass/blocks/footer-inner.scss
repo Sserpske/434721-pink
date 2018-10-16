@@ -29,3 +29,32 @@
     margin-bottom: 0;
   }
 }
+
+.footer-inner__social-link {
+  display: inline-block;
+  width: 51px;
+  height: 51px;
+  border: 3px solid #e9ebec;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 6px;
+  &:hover {
+    border-color: $blue;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer-inner__social-link--twitter {
+  background-image: url("../../img/icon-twitter.svg");
+}
+
+.footer-inner__social-link--facebook {
+  background-image: url("../../img/icon-facebook.svg");
+}
+
+.footer-inner__social-link--youtube {
+  background-image: url("../../img/icon-youtube.svg");
+}

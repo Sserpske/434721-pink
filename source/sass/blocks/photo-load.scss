@@ -4,7 +4,7 @@
 }
 
 .photo-load__wrapper {
-  width: 280px;
+  width: 620px;
   margin: 0 auto;
 }
 
@@ -15,9 +15,13 @@
   color: #d22856;
   border: 3px solid #d22856;
   border-radius: 30px;
-  width: 280px;
-  padding: 15px 0;
-  margin-bottom: 12px;
+  width: 260px;
+  padding: 14px 0;
+  margin-left: 2px;
+}
+
+.photo-load__button:first-child {
+  margin-bottom: 25px;
 }
 
 .photo-load__button:disabled {
@@ -26,6 +30,95 @@
 }
 
 .photo-load__image {
+  width: 300px;
   display: block;
-  margin-bottom: 20px;
+  // @include sm {
+  //   width: 280px;
+  // }
+}
+
+.photo-load__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // @include sm {
+  //   flex-direction: column;
+  // }
+}
+
+.photo-load__tools-wrapper {
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.photo-load__item-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 17px;
+  align-items: center;
+  padding: 8px 0 16px 2px;
+  border-bottom: 1px solid #dddfe0;
+}
+
+.photo-load__item-wrapper svg {
+  width: 24px;
+  height: 24px;
+}
+
+.photo-load__item-wrapper--fill {
+  padding-left: 3px;
+}
+
+.photo-load__item-wrapper--contrast svg {
+  width: 16px;
+  height: 16px;
+}
+
+.photo-load__item-wrapper--contrast {
+  padding-left: 8px;
+  padding-bottom: 20px;
+}
+
+.photo-load__control-bar {
+  position: relative;
+  margin-right: 18px;
+  padding-bottom: 6px;
+}
+
+.photo-load__control-scale {
+  height: 2px;
+  width: 202px;
+  background-color: $blue;
+}
+
+.photo-load__control-image {
+  position: absolute;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  top: -6px;
+  background-color: #f2f2f2;
+  border: 2px solid #cd2856;
+  border-radius: 50%;
+}
+
+.photo-load__item-wrapper--crop {
+  .photo-load__control-image {
+    right: 42px;
+  }
+}
+
+.photo-load__item-wrapper--fill {
+  .photo-load__control-image {
+    left: 25px;
+  }
+}
+
+.photo-load__item-wrapper--contrast {
+  .photo-load__control-image {
+    left: 96px;
+  }
 }

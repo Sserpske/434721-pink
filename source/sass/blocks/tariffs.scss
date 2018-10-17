@@ -12,6 +12,9 @@
     padding-top: 87px;
     padding-bottom: 27px;
   }
+  @include lg {
+    padding-top: 180px;
+  }
 }
 
 .tariffs__wrapper {
@@ -22,6 +25,9 @@
     width: 620px;
     display: block;
     margin: 0 auto;
+  }
+  @include lg {
+    width: 940px;
   }
 }
 
@@ -47,6 +53,10 @@
   @include md {
     font-size: 16px;
     padding-top: 15px;
+  }
+  @include lg {
+    font-size: 18px;
+    padding-top: 20px;
   }
 }
 
@@ -74,12 +84,20 @@
     margin-top: 3px;
     margin-bottom: 12px;
   }
+  @include lg {
+    font-size: 24px;
+    margin-top: 7px;
+    margin-bottom: 22px;
+  }
 }
 
 .tariffs__name, .tariffs__option {
   min-width: 278px;
   @include md {
     min-width: 155px;
+  }
+  @include lg {
+    min-width: 235px;
   }
 }
 
@@ -89,6 +107,9 @@
   padding: 18px 20px 17px 21px;
   @include md {
     padding: 10px 20px 11px 15px;
+  }
+  @include lg {
+    font-size: 18px;
   }
 }
 

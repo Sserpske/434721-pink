@@ -1,8 +1,8 @@
-.page-footer {
+.contacts {
   text-align: center;
 }
 
-.page-footer__contacts {
+.contacts__list {
   width: 280px;
   margin: 0 auto;
   @include md {
@@ -13,7 +13,7 @@
   }
 }
 
-.page-footer__lead {
+.contacts__lead {
   color: #283645;
   font-size: 24px;
   font-weight: 300;
@@ -25,29 +25,29 @@
   }
 }
 
-.page-footer__item {
+.contacts__item {
   margin-bottom: 20px;
 }
 
-.page-footer__text {
+.contacts__text {
   font-size: 18px;
   font-weight: 700;
   color: #283645;
   margin: 0;
 }
 
-.page-footer__content {
+.contacts__content {
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
   color: #d22856;
 }
 
-.page-footer__content--address {
+.contacts__content--address {
   font-style: normal;
 }
 
-.page-footer__map {
+.contacts__map {
   position: relative;
   min-height: 200px;
   background-color: #f2f2f2;

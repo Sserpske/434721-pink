@@ -101,8 +101,10 @@
     display: none;
   }
   .page-header__logo-wrapper {
-    background-color: rgba(0, 0, 0, 0.3);
     box-shadow: none;
+  }
+  .page-header__out-wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 

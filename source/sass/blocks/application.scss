@@ -20,6 +20,10 @@
     background-position: center bottom, center bottom;
     background-size: auto, 182%;
   }
+  @include lg {
+    background-image: url("../../img/iphone-hand-desktop@1x.png"), url("../../img/bg-back-desktop@1x.jpg");
+    background-size: auto, 215%;
+  }
 }
 
 .application__wrapper {
@@ -39,6 +43,13 @@
     z-index: 2;
     margin: 0;
   }
+  @include lg {
+    width: 940px;
+    padding-right: 637px;
+    margin: 0 auto;
+    padding-top: 170px;
+    padding-bottom: 104px;
+  }
 }
 
 .application__available {
@@ -46,6 +57,9 @@
   @include md {
     font-size: 18px;
     margin-top: 32px;
+  }
+  @include lg {
+    margin-top: 50px;
   }
 }
 
@@ -58,6 +72,12 @@
   @include md {
     display: block;
     padding: 0 50px;
+  }
+  @include lg {
+    font-size: 50px;
+    line-height: 60px;
+    padding: 0 30px;
+    margin-bottom: 52px;
   }
 }
 
@@ -75,6 +95,10 @@
   @include md {
     min-width: 300px;
     margin-bottom: 42px;
+  }
+  @include lg {
+    font-size: 21px;
+    margin-bottom: 64px;
   }
 }
 

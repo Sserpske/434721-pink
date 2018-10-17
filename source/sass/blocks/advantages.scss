@@ -5,10 +5,6 @@
   width: 100%;
   background-size: contain;
   background-position: 0 0;
-  @include md {
-    background-image: url("../../img/bg-triangle-white.svg");
-    background-position: 0 0;
-  }
 }
 
 .advantages__list-wrapper {
@@ -39,6 +35,10 @@
     padding: 50px 20px 47px 20px;
     font-size: 40px;
     line-height: 48px;
+  }
+  @include lg {
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 

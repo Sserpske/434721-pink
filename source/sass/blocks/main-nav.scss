@@ -4,15 +4,23 @@
   line-height: 32px;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: #283645;
   position: relative;
   z-index: 1;
+  @include lg {
+    text-transform: none;
+    line-height: 18px;
+    font-weight: 400;
+  }
 }
 
 .main-nav__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-none;
+  @include lg {
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__item a {
@@ -37,5 +45,8 @@
               0px 1px 0px 0px #000000;
   &:not(:last-child) {
     margin-bottom: 1px;
+  }
+  @include lg {
+    box-shadow: none;
   }
 }

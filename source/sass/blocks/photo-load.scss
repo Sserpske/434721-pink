@@ -1,6 +1,10 @@
 .photo-load {
   background-color: #f2f2f2;
   padding: 20px 0;
+  @include lg {
+    width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .photo-load__wrapper {
@@ -9,6 +13,9 @@
   @include sm {
     width: 280px;
     margin: 0 auto;
+  }
+  @include lg {
+    width: 770px;
   }
 }
 
@@ -36,12 +43,18 @@
     width: 280px;
     margin: 0;
   }
+  @include lg {
+    width: 183px;
+  }
 }
 
 .photo-load__button:first-child {
   margin-bottom: 25px;
   @include sm {
     margin-bottom: 12px;
+  }
+  @include lg {
+    margin-right: 25px;
   }
 }
 
@@ -72,6 +85,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @include lg {
+    width: 412px;
+  }
 }
 
 .photo-load__item-wrapper {
@@ -106,14 +122,6 @@
     height: 32px;
   }
 }
-
-// попытка покрасить иконки
-// .photo-load__item-wrapper--contrast svg path,
-// .photo-load__item-wrapper--fill svg path {
-//   @include sm {
-//     fill: #b5b9be;
-//   }
-// }
 
 .photo-load__item-wrapper--fill {
   padding-left: 3px;

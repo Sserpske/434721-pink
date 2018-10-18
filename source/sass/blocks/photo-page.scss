@@ -9,6 +9,9 @@
   @include md {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
   }
+  @include lg {
+    margin-bottom: 44px;
+  }
 }
 
 .photo-page__title {
@@ -25,6 +28,9 @@
     font-size: 50px;
     line-height: 60px;
     padding: 70px 0 140px 0;
+  }
+  @include lg {
+    padding: 174px 0 101px 0;
   }
 }
 
@@ -44,6 +50,10 @@
   margin: 0 auto;
   @include md {
     width: 438px;
+  }
+  @include lg {
+    width: 580px;
+    margin-bottom: 40px;
   }
 }
 

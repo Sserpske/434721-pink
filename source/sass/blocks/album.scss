@@ -2,8 +2,13 @@
   @include md {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   width: 620px;
   margin: 0 auto;
+  }
+  @include lg {
+    width: 940px;
   }
 }
 
@@ -22,10 +27,28 @@
   @include md {
     width: 620px;
   }
+  @include lg {
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    min-height: 95px
+  }
+}
+
+.album__comment--panorama p {
+  @include lg {
+    margin: 0;
+  }
 }
 
 .album__photo {
   margin: 0 auto;
+  @include lg {
+    margin: 0;
+  }
 }
 
 .album__photo-image {
@@ -41,10 +64,15 @@
   @include md {
   }
 }
+
+
 .album__user-name {
   font-weight: 700;
   font-style: normal;
   color: #283645;
+  @include lg {
+    order: 1;
+  }
 }
 
 .album__time {
@@ -52,17 +80,27 @@
   color: #283645;
   font-weight: 300;
   text-transform: uppercase;
+  @include lg {
+    order: 2;
+  }
 }
 
 .album__comment-text {
   color: #283645;
   margin: 0;
+  @include lg {
+    order: 4;
+  }
 }
 
 .album__likes {
   font-size: 12px;
   color: #d22856;
   text-transform: uppercase;
+  @include lg {
+    order: 3;
+    margin: 0;
+  }
 }
 
 .album__photo:not(:last-child) {

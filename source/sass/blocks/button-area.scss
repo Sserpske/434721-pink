@@ -45,3 +45,10 @@
 .button-area__star {
   color: #d22856;
 }
+
+.button-area__hidden-text {
+  display: none;
+  @include lg {
+    display: inline;
+  }
+}

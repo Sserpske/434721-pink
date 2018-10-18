@@ -6,8 +6,12 @@
   @include md {
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 620px;
     margin: 0 auto;
+    @include lg {
+      width: 950px;
+    }
   }
 }
 
@@ -23,7 +27,7 @@
   color: #283645;
 }
 
-.footer__logo {
+.footer__pink-logo {
   margin-bottom: 30px;
   @include md {
     margin-bottom: 0;
@@ -64,4 +68,18 @@
 
 .footer__social-link--youtube {
   background-image: url("../../img/icon-youtube.svg");
+}
+
+.footer__pink-svg {
+  &--desktop {
+    display: none;
+  }
+  @include lg {
+    &--mobile {
+      display: none;
+    }
+    &--desktop {
+      display: block;
+    }
+  }
 }

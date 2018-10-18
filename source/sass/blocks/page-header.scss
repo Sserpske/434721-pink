@@ -69,10 +69,13 @@
 .page-header__menu--closed + .form,
 .page-header__menu--opened + .form {
   .form__title {
-  padding-top: 96px;
-  @include md {
-    padding-top: 180px;
-  }
+    padding-top: 96px;
+    @include md {
+      padding-top: 180px;
+    }
+    @include lg {
+      padding-top: 174px;
+    }
   }
 }
 

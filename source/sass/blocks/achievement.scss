@@ -17,6 +17,9 @@
     border: 2px solid #e5e5e5;
     padding: 30px;
   }
+  @include lg {
+    width: 940px;
+  }
 }
 
 .achievement__title {
@@ -35,6 +38,35 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+  @include lg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.achievement__item {
+  @include lg {
+    width: 280px;
+    &:first-child {
+      order: 1;
+    }
+    &:nth-child(2) {
+      order: 4;
+    }
+    &:nth-child(3) {
+      order: 2;
+    }
+    &:nth-child(4) {
+      order: 5;
+    }
+    &:nth-child(5) {
+      order: 3;
+    }
+    &:last-child {
+      order: 6;
+    }
+  }
 }
 
 .achievement__item input {

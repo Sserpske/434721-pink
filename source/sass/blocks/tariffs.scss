@@ -110,6 +110,7 @@
   }
   @include lg {
     font-size: 18px;
+    padding: 16px 20px 19px 21px;
   }
 }
 
@@ -147,6 +148,9 @@
   @include md {
     background-position: 62px 10px;
   }
+  @include lg {
+    background-position: 101px 21px;
+  }
 }
 
 .tariffs__option--no {
@@ -155,6 +159,9 @@
   background-position: 230px 15px;
   @include md {
     background-position: 64px 8px;
+  }
+  @include lg {
+    background-position: 103px 16px;
   }
 }
 

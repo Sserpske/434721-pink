@@ -13,6 +13,9 @@
   @include md {
     width: 620px;
   }
+  @include lg {
+    width: 435px;
+  }
 }
 
 .text-fields__list {

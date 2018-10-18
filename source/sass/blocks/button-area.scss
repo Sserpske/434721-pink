@@ -9,6 +9,10 @@
     display: flex;
     justify-content: space-between;
   }
+  @include lg {
+    width: 940px;
+    margin: 0;
+  }
 }
 
 .button-area__button {

@@ -5,6 +5,10 @@
     order: 2;
     background-color: transparent;
   }
+  @include lg {
+    padding: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .application-type__field {
@@ -16,6 +20,9 @@
     width: 620px;
     border: 2px solid #e5e5e5;
     padding: 30px;
+  }
+  @include lg {
+    width: 431px;
   }
 }
 

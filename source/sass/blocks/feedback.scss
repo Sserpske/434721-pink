@@ -1,11 +1,48 @@
 .feedback {
+  position: relative;
   line-height: 30px;
   text-align: center;
-  padding: 42px 15px 44px 15px;
+  padding-top: 42px;
+  padding-bottom: 37px;
+  z-index: 1;
+  background-color: #ffffff;
+  @include md {
+    padding-top: 34px;
+    padding-bottom: 16px;
+  }
+  @include lg {
+    background-image: url("../../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 83px;
+    padding-top: 189px;
+  }
+}
+
+.feedback__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  @include md {
+    width: 620px;
+  }
+  @include lg {
+    width: 950px;
+    position: relative;
+  }
 }
 
 .feedback__item {
   margin: 0;
+  @include md {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.feedback__list {
+  @include lg {
+    width: 690px;
+    margin: 0 auto;
+  }
 }
 
 .feedback__title {
@@ -13,8 +50,74 @@
   text-decoration: none;
   font-style: normal;
   font-weight: 700;
+  @include md {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+  @include lg {
+    font-size: 24px;
+  }
+}
+
+.feedback__title-description {
+  color: #283645;
+  display: none;
+  margin: 0;
+  margin-bottom: 22px;
+  @include md {
+    display: block;
+  }
+  @include lg {
+    font-size: 18px;
+  }
 }
 
 .feedback__description {
   margin-top: 11px;
+  margin-bottom: 20px;
+  @include md {
+    font-size: 18px;
+    order: -1;
+    margin-bottom: 35px;
+  }
+}
+
+.feedback__toggle {
+  width: 12px;
+  height: 12px;
+  border: 3px solid #283645;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 7px;
+}
+
+.feedback__toggles-area {
+  @include lg {
+    display: none;
+  }
+}
+
+.feedback__arrow {
+  display: none;
+  position: absolute;
+  width: 21px;
+  height: 41px;
+  cursor: pointer;
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  @include lg {
+    display: block;
+  }
+}
+
+.feedback__arrow--prev {
+  background-image: url("../../img/icon-review-arrow-left.svg");
+  top: 37px;
+  left: 6px;
+}
+
+.feedback__arrow--next {
+  background-image: url("../../img/icon-review-arrow-right.svg");
+  top: 37px;
+  right: 6px;
 }

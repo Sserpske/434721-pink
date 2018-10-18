@@ -1,39 +1,129 @@
-.advantages {
-  position: relative;
+.advantages__outer-wrapper {
   background-color: #f2f2f2;
-  text-align: center;
-  padding: 63px 20px 287px 20px;
-  background-image: url("../../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center 109%;
-}
-
-// косой фон
-.advantages::before {
-  content: "";
-  width: 320px;
-  height: 25px;
-  position: absolute;
   background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-size: 101% auto;
-  background-position: 50% 0;
-  left: 0;
-  top: 0;
+  width: 100%;
+  background-size: contain;
+  background-position: 0 0;
+  @include lg {
+    padding-bottom: 5px;
+  }
+}
+
+.advantages__list-wrapper {
+  padding-top: 81px;
+  padding-bottom: 287px;
+  margin: 0 auto;
+  position: relative;
+  width: 280px;
+  @include md {
+    padding-bottom: 8px;
+    width: 660px;
+    padding-top: 74px;
+  }
+  @include lg {
+    width: 940px;
+    padding: 0;
+  }
+}
+
+.advantages__lead {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  text-align: center;
+  color: #283645;
+  padding: 40px 58px 32px 58px;
+  @include md {
+    padding: 50px 20px 47px 20px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  @include lg {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.advantages__lead-text {
+  margin: 0;
+  &:first-child {
+    margin-bottom: 29px;
+    @include md {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.advantages__item {
+  @include lg {
+    width: 298px;
+    &:first-child {
+      margin-right: 6px;
+    }
+  }
 }
 
 .advantages__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-none;
+  text-align: center;
+  @include md {
+    width: 310px;
+    text-align: left;
+    margin: 0 20px 0 auto;
+  }
+  @include lg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    width: 940px;
+    text-align: center;
+  }
+}
+
+.advantages__screen-image {
+  display: none;
+  @include lg {
+    display: inline-block;
+    margin-bottom: 49px;
+  }
+}
+
+.advantages__main-image {
+  position: absolute;
+  z-index: 0;
+  bottom: -42px;
+  right: 60px;
+  @include md {
+    bottom: 0;
+    left: 21px;
+  }
+  @include lg {
+    display: none;
+  }
 }
 
 .advantages__description {
   margin: 0;
   margin-bottom: 31px;
+  @include md {
+    margin-bottom: 34px;
+  }
+  @include lg {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 25px;
+  }
 }
 
 .advantages__title {
   font-size: 18px;
+  margin: 0;
   margin-bottom: 12px;
+  @include lg {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
 }

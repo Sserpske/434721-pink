@@ -1,13 +1,15 @@
+@import "variable.scss";
 @import "global.scss";
-@import "blocks/main-background.scss";
+@import "mixin.scss";
+@import "fonts.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/page-header.scss";
 @import "blocks/application.scss";
 @import "blocks/page-main.scss";
-@import "blocks/lead-main.scss";
 @import "blocks/advantages.scss";
 @import "blocks/feedback.scss";
 @import "blocks/tariffs.scss";
-@import "blocks/page-footer.scss";
+@import "blocks/contacts.scss";
 @import "blocks/form.scss";
 @import "blocks/text-fields.scss";
 @import "blocks/achievement.scss";
@@ -18,5 +20,6 @@
 @import "blocks/pop-up.scss";
 @import "blocks/photo-page.scss";
 @import "blocks/album.scss";
-@import "blocks/footer-inner.scss";
+@import "blocks/footer.scss";
 @import "blocks/photo-load.scss";
+@import "blocks/science.scss";

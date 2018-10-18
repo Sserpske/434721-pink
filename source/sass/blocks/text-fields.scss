@@ -1,6 +1,21 @@
 .text-fields {
+  @include md {
+    order: 1;
+  }
+}
+
+.text-fields__field {
   border: 0;
-  padding: 14px 18px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 10px;
+  @include md {
+    width: 620px;
+  }
+  @include lg {
+    width: 435px;
+  }
 }
 
 .text-fields__list {
@@ -16,6 +31,10 @@
   margin-left: 22px;
   margin-bottom: 5px;
   display: inline-block;
+  @include md {
+    margin: 0;
+    margin-right: 20px;
+  }
 }
 
 .text-fields__input::-webkit-input-placeholder {
@@ -26,11 +45,14 @@
 
 .text-fields__input {
   width: 100%;
-  box-sizing: border-box;
   padding: 21px;
   border: 2px solid #e5e5e5;
 }
 
 .text-fields__item {
   margin-bottom: 18px;
+  @include md {
+    display: flex;
+    align-items: center;
+  }
 }

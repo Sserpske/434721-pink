@@ -1,5 +1,18 @@
 .button-area {
   text-align: center;
+  width: 280px;
+  margin: 0 auto;
+  padding: 30px 0;
+  @include md {
+    order: 6;
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @include lg {
+    width: 940px;
+    margin: 0;
+  }
 }
 
 .button-area__button {
@@ -7,15 +20,35 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #ffffff;
+  width: 280px;
+  padding: 17px 0 16px 0;
+  border-radius: 3px;
+  @include md {
+    width: 300px;
+  }
+}
+
+.pop-up__button-wrapper {
+  background-color: #f2f2f2;
+  padding: 40px 0;
 }
 
 .button-area__notify {
   line-height: 30px;
   color: #283645;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .button-area__star {
   color: #d22856;
+}
+
+.button-area__hidden-text {
+  display: none;
+  @include lg {
+    display: inline;
+  }
 }

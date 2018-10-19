@@ -7,11 +7,15 @@
   background-color: #474f58;
   position: relative;
   min-height: 396px;
-  background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 5% bottom, center bottom;
   background-color: white;
   background-size: auto, cover;
+  @include retina {
+    background-image: url("../../img/iphone-hand-mobile@2x.png"), url("../../img/bg-back-mobile@2x.jpg");
+    background-size: 258px auto, cover;
+  }
   @include md {
     position: absolute;
     width: 100%;
@@ -19,11 +23,19 @@
     background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
     background-position: center bottom, center bottom;
     background-size: auto, 182%;
+    @include retina {
+      background-image: url("../../img/iphone-hand-tablet@2x.png"), url("../../img/bg-back-tablet@2x.jpg");
+      background-size: 700px auto, 182%;
+    }
   }
   @include lg {
     background-image: url("../../img/iphone-hand-desktop@1x.png"), url("../../img/bg-back-desktop@1x.jpg");
     background-size: auto, 214%;
     background-position: 98% bottom, center bottom;
+    @include retina {
+      background-image: url("../../img/iphone-hand-desktop@2x.png"), url("../../img/bg-back-desktop@2x.jpg");
+      background-size: 1050px auto, 214%;
+    }
   }
 }
 

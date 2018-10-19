@@ -86,8 +86,8 @@
       </div>
     </header>
     <main class="photo-page">
-      <div class="photo-page__background">
-          <h1 class="photo-page__title">Фотографии пользователей</h1>
+      <div class="inner-background">
+          <h1 class="inner-background__title">Фотографии пользователей</h1>
       </div>
       <div class="photo-page__lead">
         <p class="photo-page__lead-text">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите, как не&nbsp;хватает ваших?</p>
@@ -95,10 +95,14 @@
       <section class="photo-page__album album">
         <h2 class="visually-hidden">фотографии</h2>
         <article class="album__photo">
-          <img src="img/panorama-mobile@1x.jpg" alt="фотография" class="album__photo-image album__photo-image--panorama">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="панорама дня" class="album__photo-image album__photo-image--panorama">
+          </picture>
           <blockquote class="album__comment album__comment--panorama">
             <p>
-              <cite class="album__user-name">Анна</cite>
+              <span class="album__user-name">Анна</span>
               <span class="album__time">(5&nbsp;минут назад)</span>
             </p>
             <p class="album__comment-text">Прыгать или нет? Напишите в коментарии свой совет и&nbsp;смотрите прямую трансляцию в&nbsp;перископе, задавайте свои вопросы!</p>
@@ -107,54 +111,78 @@
         </article>
         <div class="album__wrapper">
           <article class="album__photo">
-            <img src="img/photo-car-mobile@1x.jpg" alt="фотография" class="album__photo-image" width="280" height="180">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="фотография" class="album__photo-image">
+            </picture>
             <blockquote class="album__comment">
-              <cite class="album__user-name">Левон</cite>
+              <span class="album__user-name">Левон</span>
               <span class="album__time">(5 часов назад)</span>
               <p class="album__comment-text">Вчера он&nbsp;на&nbsp;луну летал, сегодня в&nbsp;руки к&nbsp;нам попал.</p>
               <p class="album__likes">Нравится: 356</p>
             </blockquote>
           </article>
           <article class="album__photo">
-            <img src="img/photo-drumset-mobile@1x.jpg" alt="фотография" class="album__photo-image" width="280" height="180">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="фотография" class="album__photo-image">
+            </picture>
             <blockquote class="album__comment">
-              <cite class="album__user-name">Антон</cite>
+              <span class="album__user-name">Антон</span>
               <span class="album__time">(12 часов назад)</span>
               <p class="album__comment-text">Соседи будут рады!</p>
               <p class="album__likes">Нравится: 666</p>
             </blockquote>
           </article>
           <article class="album__photo">
-            <img src="img/photo-window-mobile@1x.jpg" alt="фотография" class="album__photo-image" width="280" height="180">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
+              <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="фотография" class="album__photo-image">
+            </picture>
             <blockquote class="album__comment">
-              <cite class="album__user-name">Борис</cite>
+              <span class="album__user-name">Борис</span>
               <span class="album__time">(20 часов назад)</span>
               <p class="album__comment-text">Здесь могла быть ваша цитата о&nbsp;высоком и&nbsp;вечном.</p>
               <p class="album__likes">Нравится: 215</p>
             </blockquote>
           </article>
           <article class="album__photo">
-            <img src="img/photo-fair-mobile@1x.jpg" alt="фотография" class="album__photo-image" width="280" height="180">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
+              <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="фотография" class="album__photo-image">
+            </picture>
             <blockquote class="album__comment">
-              <cite class="album__user-name">Сергей</cite>
+              <span class="album__user-name">Сергей</span>
               <span class="album__time">(25 часов назад)</span>
               <p class="album__comment-text">Самая кубанская в мире!</p>
               <p class="album__likes">Нравится: 4</p>
             </blockquote>
           </article>
           <article class="album__photo">
-            <img src="img/photo-pov-mobile@1x.jpg" alt="фотография" class="album__photo-image" width="280" height="180">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
+              <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="фотография" class="album__photo-image">
+            </picture>
             <blockquote class="album__comment">
-              <cite class="album__user-name">Максим</cite>
+              <span class="album__user-name">Максим</span>
               <span class="album__time">(40 часов назад)</span>
               <p class="album__comment-text">Где снег-то?</p>
               <p class="album__likes">Нравится: 150</p>
             </blockquote>
           </article>
           <article class="album__photo">
-            <img src="img/photo-wing-mobile@1x.jpg" alt="фотография" class="album__photo-image" width="280" height="180">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
+              <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="фотография" class="album__photo-image">
+            </picture>
             <blockquote class="album__comment">
-              <cite class="album__user-name">Надежда</cite>
+              <span class="album__user-name">Надежда</span>
               <span class="album__time">(45 часов назад)</span>
               <p class="album__comment-text">Всем GM&nbsp;и&nbsp;взаимные лайки!</p>
               <p class="album__likes">Нравится: 2560</p>
@@ -170,7 +198,10 @@
           <h2 class="visually-hidden">Загрузка фотографий</h2>
           <form action="https://echo.htmlacademy.ru" class="photo-load__form" method="post">
             <div class="photo-load__picture">
-              <img src="img/photo-road-mobile@1x.jpg" alt="фотография" class="photo-load__image">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
+                <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="фотография" class="photo-load__image">
+              </picture>
             </div>
             <div class="photo-load__tools-wrapper">
               <div class="photo-load__tools-list">

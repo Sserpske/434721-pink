@@ -6,6 +6,18 @@ $screen-md-max: 660px;
 // Tablets and small desktops
 $screen-lg-max: 1200px;
 
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+
+
+@mixin retina {
+  @media (min-resolution: #{$retina-dpi}),
+  (min-resolution: #{$retina-dppx}) {
+    @content;
+  }
+}
+
 
 // Small devices
 @mixin sm {

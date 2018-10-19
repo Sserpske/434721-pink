@@ -58,20 +58,7 @@
 
 .page-header__menu--closed + .photo-page,
 .page-header__menu--opened + .photo-page {
-  .photo-page__title {
-    padding-top: 96px;
-    @include md {
-      padding-top: 180px;
-    }
-    @include lg {
-      padding-top: 174px;
-    }
-  }
-}
-
-.page-header__menu--closed + .form,
-.page-header__menu--opened + .form {
-  .form__title {
+  .inner-background__title {
     padding-top: 96px;
     @include md {
       padding-top: 180px;

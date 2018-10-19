@@ -1,10 +1,12 @@
 .contacts {
   text-align: center;
+  padding-top: 18px;
 }
 
 .contacts__list {
   width: 280px;
   margin: 0 auto;
+  padding-bottom: 20px;
   @include md {
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +24,7 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
   @include md {
     font-size: 40px;
     line-height: 48px;
@@ -37,18 +39,25 @@
 }
 
 .contacts__item {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   &--telephone {
     @include lg {
       order: 2;
     }
   }
   &--address {
+    .contacts__text {
+      margin-bottom: 3px;
+    }
     @include lg {
       order: 3;
     }
   }
   &--mail {
+    margin-bottom: 22px;
+    .contacts__text {
+      margin-bottom: 3px;
+    }
     @include lg {
       order: 4;
     }

@@ -1,6 +1,6 @@
 .tariffs {
   background-color: #f2f2f2;
-  padding: 91px 0 35px 0;
+  padding: 91px 0 43px 0;
   width: 100%;
   overflow: hidden;
   background-image: url("../../img/bg-triangle-white.svg");
@@ -34,7 +34,7 @@
 .tariffs__list {
   border-collapse: collapse;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .tariffs__list-head {
@@ -57,6 +57,30 @@
   @include lg {
     font-size: 18px;
     padding-top: 20px;
+  }
+  &--hit {
+    position: relative;
+    &::before {
+      content: "хит";
+      position: absolute;
+      top: 15px;
+      left: 9px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #ffffff;
+      transform: rotate(-45deg);
+      z-index: 3;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 74px;
+      height: 73px;
+      background-image: url("../../img/bg-hit.svg");
+      background-repeat: no-repeat;
+      top: 0;
+      left: -2px;
+    }
   }
 }
 
@@ -165,7 +189,19 @@
   }
 }
 
-.tariffs__toggles {
+.tariffs__toggle {
+  width: 12px;
+  height: 12px;
+  border: 3px solid #f2f2f2;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: #bec2c7;
+  &--active {
+    border: 3px solid $blue;
+    background-color: transparent;
+  }
   @include md {
     display: none;
   }

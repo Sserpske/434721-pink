@@ -14,7 +14,7 @@
   background-size: auto, cover;
   @include retina {
     background-image: url("../../img/iphone-hand-mobile@2x.png"), url("../../img/bg-back-mobile@2x.jpg");
-    background-size: 258px auto, cover;
+    background-size: 258px auto, 221%;
   }
   @include md {
     position: absolute;
@@ -65,6 +65,16 @@
   }
 }
 
+.application__icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 21px;
+}
+
 .application__available {
   font-weight: 300;
   @include md {
@@ -96,7 +106,7 @@
 
 .application__button {
   display: inline-block;
-  min-width: 281px;
+  width: 280px;
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
@@ -119,9 +129,8 @@
 
 .application__icon {
   display: inline-block;
-  &:not(:last-child) {
-    margin-right: 32px;
-  }
+  background-repeat: no-repeat;
+  margin: 0 10px;
   &--apple {
     width: 45.21px;
     height: 56.753px;
@@ -131,10 +140,12 @@
     width: 42.084px;
     height: 47.041px;
     background-image: url('../../img/logo-android.svg');
+    margin-top: 7px;
   }
   &--windows {
     width: 43.922px;
     height: 41px;
     background-image: url('../../img/logo-microsoft.svg');
+    margin-top: 8px;
   }
 }

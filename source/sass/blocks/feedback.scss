@@ -3,7 +3,8 @@
   line-height: 30px;
   text-align: center;
   padding-top: 42px;
-  padding-bottom: 37px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
   z-index: 1;
   background-color: #ffffff;
   @include md {
@@ -51,6 +52,7 @@
   font-style: normal;
   font-weight: 700;
   margin: 0;
+  margin-bottom: 13px;
   @include md {
     font-size: 20px;
     margin-bottom: 2px;
@@ -75,7 +77,7 @@
 
 .feedback__description {
   margin-top: 11px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   @include md {
     font-size: 18px;
     order: -1;
@@ -86,10 +88,16 @@
 .feedback__toggle {
   width: 12px;
   height: 12px;
-  border: 3px solid #283645;
+  border: 3px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
-  margin-right: 7px;
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: #bec2c7;
+  &--active {
+    border: 3px solid $blue;
+    background-color: transparent;
+  }
 }
 
 .feedback__toggles-area {

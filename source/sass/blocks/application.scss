@@ -10,7 +10,7 @@
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 5% bottom, center bottom;
-  background-color: white;
+  background-color: #2e353d;
   background-size: auto, cover;
   @include retina {
     background-image: url("../../img/iphone-hand-mobile@2x.png"), url("../../img/bg-back-mobile@2x.jpg");
@@ -30,11 +30,12 @@
   }
   @include lg {
     background-image: url("../../img/iphone-hand-desktop@1x.png"), url("../../img/bg-back-desktop@1x.jpg");
-    background-size: auto, 214%;
+    background-size: auto, 213.5%;
     background-position: 98% bottom, center bottom;
     @include retina {
       background-image: url("../../img/iphone-hand-desktop@2x.png"), url("../../img/bg-back-desktop@2x.jpg");
-      background-size: 1050px auto, 214%;
+      background-size: 1050px auto, 213.5%;
+      background-position: 98% bottom, center 10px;
     }
   }
 }
@@ -58,10 +59,10 @@
   }
   @include lg {
     width: 940px;
-    padding-right: 637px;
+    padding-right: 640px;
     margin: 0 auto;
-    padding-top: 168px;
-    padding-bottom: 104px;
+    padding-top: 167px;
+    padding-bottom: 103px;
   }
 }
 
@@ -76,6 +77,10 @@
   @include md {
     padding: 0 50px;
     margin-bottom: 36px;
+  }
+  @include lg {
+    margin-bottom: 54px;
+    padding: 0 30px;
   }
 }
 
@@ -103,7 +108,7 @@
     font-size: 50px;
     line-height: 60px;
     padding: 0 30px;
-    margin-bottom: 52px;
+    margin-bottom: 53px;
   }
 }
 
@@ -124,7 +129,7 @@
   }
   @include lg {
     font-size: 21px;
-    margin-bottom: 64px;
+    margin-bottom: 69px;
   }
 }
 

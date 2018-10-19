@@ -15,8 +15,9 @@
   @include lg {
     background-image: url("../../img/icon-quotes.svg");
     background-repeat: no-repeat;
-    background-position: center 83px;
-    padding-top: 189px;
+    background-position: center 73px;
+    padding-top: 176px;
+    padding-bottom: 19px;
   }
 }
 
@@ -82,7 +83,7 @@
   @include md {
     font-size: 18px;
     order: -1;
-    margin-bottom: 35px;
+    margin-bottom: 36px;
   }
 }
 

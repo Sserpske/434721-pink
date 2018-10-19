@@ -73,13 +73,16 @@
   align-items: center;
   padding: 0 20px;
   margin-bottom: 21px;
+  @include md {
+    padding: 0 50px;
+    margin-bottom: 36px;
+  }
 }
 
 .application__available {
   font-weight: 300;
   @include md {
     font-size: 18px;
-    margin-top: 32px;
   }
   @include lg {
     margin-top: 50px;
@@ -117,7 +120,7 @@
   margin-bottom: 32px;
   @include md {
     min-width: 300px;
-    margin-bottom: 42px;
+    margin-bottom: 45px;
   }
   @include lg {
     font-size: 21px;

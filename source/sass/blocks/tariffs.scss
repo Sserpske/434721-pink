@@ -9,8 +9,8 @@
   background-size: contain;
   background-position: 0 0;
   @include md {
-    padding-top: 87px;
-    padding-bottom: 27px;
+    padding-top: 88px;
+    padding-bottom: 35px;
   }
   @include lg {
     padding-top: 180px;
@@ -70,6 +70,10 @@
       color: #ffffff;
       transform: rotate(-45deg);
       z-index: 3;
+      @include md {
+        top: 7px;
+        left: 7px;
+      }
     }
     &::after {
       content: "";
@@ -80,6 +84,12 @@
       background-repeat: no-repeat;
       top: 0;
       left: -2px;
+      @include md {
+        width: 61px;
+        height: 61px;
+        background-image: url("../../img/bg-hit-tablet.svg");
+        left: 0;
+      }
     }
   }
 }

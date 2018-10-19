@@ -21,7 +21,7 @@
   padding-top: 46px;
   padding-bottom: 40px;
   background-size: 202px 202px, 238px 276px;
-  background-position: 19px 64px, 1px 8px;
+  background-position: 19px 64px, 1px 9px;
   position: relative;
   &::after {
     position: absolute;
@@ -30,7 +30,7 @@
     line-height: 96px;
     font-weight: 700;
     color: #d22856;
-    top: 115px;
+    top: 113px;
     left: 64px;
     @include lg {
       font-size: 120px;

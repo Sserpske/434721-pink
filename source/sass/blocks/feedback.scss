@@ -9,7 +9,8 @@
   background-color: #ffffff;
   @include md {
     padding-top: 34px;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
+    margin-bottom: 0;
   }
   @include lg {
     background-image: url("../../img/icon-quotes.svg");
@@ -66,7 +67,7 @@
   color: #283645;
   display: none;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
   @include md {
     display: block;
   }

@@ -10,7 +10,6 @@
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 5% bottom, center bottom;
-  background-color: #2e353d;
   background-size: auto, cover;
   @include retina {
     background-image: url("../../img/iphone-hand-mobile@2x.png"), url("../../img/bg-back-mobile@2x.jpg");

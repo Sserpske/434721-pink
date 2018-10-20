@@ -119,13 +119,14 @@
   &::before {
     position: absolute;
     content: "";
-    width: 14px;
-    height: 14px;
+    width: 40px;
+    height: 40px;
     left: 0;
     top: 4px;
-    background-image: url("../../img/sprite.svg#icon-heart");
+    background-image: url("../../img/sprite-s.svg#icon-heart");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-size: 100%;
   }
   @include lg {
     order: 3;

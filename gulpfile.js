@@ -51,8 +51,33 @@ gulp.task('svg-sprite', function () {
     // build svg sprite
     .pipe(svgSprite({
       mode: {
+        stack: {
+          sprite: "source/img/sprite-s.svg",
+          render: {
+            scss: {
+              dest:'source/sass/sprite1.scss',
+              template: "source/sass/template.scss"
+            }
+          }
+        }
+      }
+    }))
+    .pipe(gulp.dest('source/img'));
+});
+
+gulp.task('svg-sprite', function () {
+  return gulp.src('source/img/*.svg')
+  // minify svg
+    .pipe(svgmin({
+      js2svg: {
+        pretty: true
+      }
+    }))
+    // build svg sprite
+    .pipe(svgSprite({
+      mode: {
         symbol: {
-          sprite: "source/img/sprite.svg",
+          sprite: "source/img/sprite-s.svg",
           render: {
             scss: {
               dest:'source/sass/sprite1.scss',

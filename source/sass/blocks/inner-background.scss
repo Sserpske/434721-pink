@@ -4,10 +4,11 @@
   width: 100%;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center 23%;
   background-size: cover;
   @include retina {
     background-image: url("../../img/bg-back-mobile@2x.jpg");
+    background-size: 221%;
   }
   @include md {
     background-image: url("../../img/bg-back-tablet@1x.jpg");

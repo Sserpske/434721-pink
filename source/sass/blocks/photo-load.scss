@@ -8,6 +8,7 @@
   @include lg {
     width: 940px;
     margin: 0 auto;
+    padding-bottom: 57px;
   }
 }
 
@@ -19,7 +20,7 @@
     margin: 0 auto;
   }
   @include lg {
-    width: 770px;
+    width: 820px;
   }
 }
 
@@ -30,6 +31,9 @@
 .photo-load__picture {
   @include sm {
     margin-bottom: 32px;
+  }
+  @include lg {
+    margin-left: 20px;
   }
 }
 
@@ -58,7 +62,8 @@
     margin-bottom: 12px;
   }
   @include lg {
-    margin-right: 25px;
+    margin-right: 38px;
+    margin-bottom: 0;
   }
 }
 
@@ -107,6 +112,9 @@
     border-bottom: none;
     margin-bottom: 51px;
   }
+  @include lg {
+    padding: 0;
+  }
 }
 
 .photo-load__item-wrapper {
@@ -127,6 +135,10 @@
       width: 48px;
       height: 48px;
     }
+    @include lg {
+      width: 48px;
+      height: 48px;
+    }
   }
   &--active {
     svg {
@@ -139,6 +151,10 @@
   width: 16px;
   height: 16px;
   @include sm {
+    width: 32px;
+    height: 32px;
+  }
+  @include lg {
     width: 32px;
     height: 32px;
   }
@@ -159,6 +175,9 @@
     top: 16px;
     right: 39px;
   }
+  @include lg {
+    padding-bottom: 14px;
+  }
 }
 
 .photo-load__item-wrapper--fill,
@@ -174,6 +193,10 @@
   position: relative;
   margin-right: 18px;
   padding-bottom: 6px;
+  @include lg {
+    margin-right: 30px;
+    padding-bottom: 10px;
+  }
 }
 
 .photo-load__control-scale {
@@ -182,6 +205,9 @@
   background-color: $blue;
   @include sm {
     width: 240px;
+  }
+  @include lg {
+    width: 288px;
   }
 }
 
@@ -202,18 +228,27 @@
     @include sm {
       right: 33px;
     }
+    @include lg {
+      right: 203px;
+    }
   }
 }
 
 .photo-load__item-wrapper--fill {
   .photo-load__control-image {
     left: 25px;
+    @include lg {
+      left: 246px;
+    }
   }
 }
 
 .photo-load__item-wrapper--contrast {
   .photo-load__control-image {
     left: 96px;
+    @include lg {
+      left: 160px;
+    }
   }
 }
 

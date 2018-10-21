@@ -42,16 +42,16 @@
   @include lg {
     width: 940px;
     min-height: 95px;
+    padding-bottom: 16px;
   }
-}
-
-.album__comment--panorama p:first-child {
-  margin: 0;
 }
 
 .album__photo {
   position: relative;
   margin-bottom: 20px;
+  @include lg {
+    margin-bottom: 54px;
+  }
   &--panorama {
     @include md {
       overflow: hidden;
@@ -76,10 +76,21 @@
       @include md {
         top: 57px;
       }
+      @include lg {
+        top: 54px;
+        right: 130px;
+      }
     }
   }
-  @include lg {
-    margin: 0;
+}
+
+.album__wrapper {
+  .album__photo:last-child,
+  .album__photo:nth-last-child(2),
+  .album__photo:nth-last-child(3) {
+    @include lg {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -94,6 +105,10 @@
     width: 106%;
     position: relative;
     left: -20px;
+  }
+  @include lg {
+    width: 100%;
+    left: 0;
   }
 }
 

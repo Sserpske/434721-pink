@@ -18,7 +18,7 @@
   }
   @include lg {
     width: 580px;
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
@@ -30,5 +30,9 @@
     width: 422px;
     padding-top: 27px;
     padding-bottom: 50px;
+  }
+  @include lg {
+    padding-top: 41px;
+    padding-bottom: 49px;
   }
 }

@@ -20,7 +20,10 @@
   @include md {
     width: 300px;
     min-height: 155px;
-    padding: 23px 28px 17px 28px;
+    padding: 23px 33px 23px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
@@ -33,10 +36,12 @@
     flex-wrap: wrap;
     align-content: flex-start;
     min-height: 120px;
+    padding-bottom: 17px;
+    padding-right: 28px;
   }
   @include lg {
     width: 940px;
-    min-height: 95px
+    min-height: 95px;
   }
 }
 
@@ -50,7 +55,7 @@
   &--panorama {
     @include md {
       overflow: hidden;
-      margin-bottom: 49px;
+      margin-bottom: 50px;
     }
     &::before {
       content: "Панорама дня";
@@ -117,6 +122,7 @@
   margin-bottom: 9px;
   @include md {
     order: 4;
+    margin-bottom: 8px;
   }
 }
 
@@ -125,30 +131,40 @@
   color: #d22856;
   text-transform: uppercase;
   position: relative;
-  padding-left: 32px;
-  &::before {
-    position: absolute;
-    content: "";
-    width: 13px;
-    height: 12px;
-    right: 108px;
-    top: 3px;
-    background-image: url("../../img/icon-heart.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    @include md {
-      right: 1px;
-      top: 7px;
-    }
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   @include md {
     order: 3;
     margin: 0;
-    padding-left: 0;
-    padding-right: 30px;
+    justify-content: space-between;
   }
 }
 
-// .album__photo:not(:last-child) {
-//   margin-bottom: 20px;
-// }
+.album__likes-heart {
+  width: 13px;
+  height: 12px;
+  background-image: url("../../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  margin-right: 18px;
+  margin-top: 2px;
+  @include md {
+    order: 2;
+    margin-right: 0;
+  }
+}
+
+.album__likes--panorama {
+  .album__likes-heart {
+    @include md {
+      margin-left: 19px;
+    }
+  }
+}
+
+.album__likes-count {
+  @include md {
+    order: 1;
+  }
+}

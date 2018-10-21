@@ -1,6 +1,10 @@
 .photo-load {
   background-color: #f2f2f2;
   padding: 20px 0 41px 0;
+  @include md {
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
   @include lg {
     width: 940px;
     margin: 0 auto;
@@ -49,7 +53,7 @@
 }
 
 .photo-load__button:first-child {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   @include sm {
     margin-bottom: 12px;
   }
@@ -112,6 +116,12 @@
     fill: rgba($blue, 0.3);
     &:hover {
       fill: rgba($blue, 0.5);
+    }
+    @include md {
+      fill: $pink;
+      &:hover {
+        fill: $pink;
+      }
     }
     @include sm {
       width: 48px;

@@ -7,8 +7,10 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-start;
     width: 620px;
     margin: 0 auto;
+    padding-top: 35px;
     @include lg {
       width: 950px;
     }
@@ -27,6 +29,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @include md {
+    padding-top: 15px;
+  }
 }
 
 .footer__copyright-text {
@@ -56,6 +61,8 @@
   margin-bottom: 34px;
   @include md {
     margin-bottom: 0;
+    margin-right: 6px;
+    padding-top: 3px;
   }
 }
 
@@ -73,6 +80,9 @@
   }
   &:active {
     opacity: 0.3;
+  }
+  @include md {
+    margin-right: 10px;
   }
 }
 

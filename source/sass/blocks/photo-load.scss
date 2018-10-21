@@ -1,6 +1,6 @@
 .photo-load {
   background-color: #f2f2f2;
-  padding: 20px 0;
+  padding: 20px 0 41px 0;
   @include lg {
     width: 940px;
     margin: 0 auto;
@@ -37,7 +37,7 @@
   border: 3px solid #d22856;
   border-radius: 30px;
   width: 260px;
-  padding: 14px 0;
+  padding: 14px 0 15px 0;
   margin-left: 2px;
   @include sm {
     width: 280px;
@@ -105,12 +105,23 @@
   }
 }
 
-.photo-load__item-wrapper svg {
-  width: 24px;
-  height: 24px;
-  @include sm {
-    width: 48px;
-    height: 48px;
+.photo-load__item-wrapper {
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: rgba($blue, 0.3);
+    &:hover {
+      fill: rgba($blue, 0.5);
+    }
+    @include sm {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  &--active {
+    svg {
+      fill: $pink;
+    }
   }
 }
 

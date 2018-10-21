@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0;
+  padding: 40px 0;
   @include md {
     flex-direction: row;
     justify-content: space-between;
@@ -22,20 +22,38 @@
   }
 }
 
+.footer__copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer__copyright-text {
   line-height: 18px;
   color: #283645;
+  padding-right: 15px;
+  padding-bottom: 10px;
 }
 
 .footer__pink-logo {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+  svg {
+    fill: $blue;
+    &:hover {
+      fill: $pink;
+    }
+    &:active {
+      fill: $blue;
+      opacity: 0.3;    }
+  }
   @include md {
     margin-bottom: 0;
   }
 }
 
 .footer__social {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   @include md {
     margin-bottom: 0;
   }
@@ -81,5 +99,15 @@
     &--desktop {
       display: block;
     }
+  }
+}
+
+.footer__academy-logo svg {
+  fill: $pink;
+  &:hover {
+    fill: $blue;
+  }
+  &:active {
+    fill: rgba($blue, 0.3)
   }
 }

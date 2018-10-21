@@ -16,7 +16,7 @@
   width: 280px;
   background-color: #f2f2f2;
   margin: 0 auto;
-  padding: 18px 10px 5px 18px;
+  padding: 17px 10px 21px 17px;
   @include md {
     width: 300px;
     min-height: 155px;
@@ -38,10 +38,8 @@
   }
 }
 
-.album__comment--panorama p {
-  @include lg {
-    margin: 0;
-  }
+.album__comment--panorama p:first-child {
+  margin: 0;
 }
 
 .album__photo {
@@ -106,6 +104,7 @@
 .album__comment-text {
   color: #283645;
   margin: 0;
+  margin-bottom: 9px;
   @include lg {
     order: 4;
   }
@@ -116,17 +115,17 @@
   color: #d22856;
   text-transform: uppercase;
   position: relative;
+  padding-left: 32px;
   &::before {
     position: absolute;
     content: "";
-    width: 40px;
-    height: 40px;
+    width: 13px;
+    height: 12px;
     left: 0;
-    top: 4px;
-    background-image: url("../../img/sprite-s.svg#icon-heart");
+    top: 3px;
+    background-image: url("../../img/icon-heart.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 100%;
   }
   @include lg {
     order: 3;

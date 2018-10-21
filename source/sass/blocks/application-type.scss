@@ -1,6 +1,6 @@
 .application-type {
   background-color: #f2f2f2;
-  padding: 30px 0;
+  padding: 38px 0 48px 0;
   @include md {
     order: 2;
     background-color: transparent;
@@ -19,7 +19,7 @@
   @include md {
     width: 620px;
     border: 2px solid #e5e5e5;
-    padding: 30px;
+    padding: 9px 30px 59px 57px;
   }
   @include lg {
     width: 431px;
@@ -32,9 +32,15 @@
   text-transform: uppercase;
   text-align: center;
   padding: 0;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
   @include md {
-    padding: 0 20px;
+    padding: 0 26px 0;
+  }
+}
+
+.application-type__item {
+  &:not(:last-child) {
+    margin-bottom: 45px;
   }
 }
 
@@ -42,22 +48,13 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
-}
-
-.application-type__list {
-  @include list-none
-}
-
-.application-type__item input {
-  display: none;
-}
-
-.application-type__radio {
   display: inline-block;
   position: relative;
-  margin-bottom: 45px;
   padding-left: 69px;
   cursor: pointer;
+  @include md {
+    padding-left: 60px;
+  }
   &::before {
     content: "";
     width: 39px;
@@ -69,6 +66,14 @@
     left: 0;
     top: -4px;
   }
+}
+
+.application-type__list {
+  @include list-none
+}
+
+.application-type__item input {
+  display: none;
 }
 
 .application-type__item input:checked + .application-type__radio::after {

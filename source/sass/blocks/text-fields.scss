@@ -1,5 +1,7 @@
 .text-fields {
+  margin-bottom: 43px;
   @include md {
+    margin-bottom: 19px;
     order: 1;
   }
 }
@@ -33,7 +35,7 @@
   display: inline-block;
   @include md {
     margin: 0;
-    margin-right: 20px;
+    margin-right: 19px;
   }
 }
 
@@ -47,12 +49,21 @@
   width: 100%;
   padding: 21px;
   border: 2px solid #e5e5e5;
+  @include md {
+    padding-top: 22px;
+  }
 }
 
 .text-fields__item {
-  margin-bottom: 18px;
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
   @include md {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 52px;
+    }
   }
 }

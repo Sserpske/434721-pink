@@ -2,7 +2,7 @@
   text-align: center;
   width: 280px;
   margin: 0 auto;
-  padding: 30px 0;
+  margin-bottom: 16px;
   @include md {
     order: 6;
     width: 620px;
@@ -25,6 +25,7 @@
   width: 280px;
   padding: 17px 0 16px 0;
   border-radius: 3px;
+  margin-bottom: 21px;
   @include md {
     width: 300px;
   }

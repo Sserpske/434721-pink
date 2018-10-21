@@ -1,6 +1,6 @@
 .achievement {
   background-color: #f2f2f2;
-  padding: 30px 0;
+  padding: 37px 0 49px 0;
   @include md {
     order: 4;
     background-color: transparent;
@@ -27,7 +27,7 @@
   color: #d22856;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 43px;
+  margin-bottom: 45px;
   padding: 0 25px;
 }
 
@@ -46,6 +46,9 @@
 }
 
 .achievement__item {
+  &:not(:last-child) {
+    margin-bottom: 52px;
+  }
   @include lg {
     width: 280px;
     &:first-child {
@@ -76,7 +79,6 @@
 .achievement__checkbox {
   display: inline-block;
   position: relative;
-  margin-bottom: 52px;
   padding-left: 69px;
   cursor: pointer;
   &::before {

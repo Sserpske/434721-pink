@@ -15,7 +15,7 @@
   @include md {
     width: 620px;
     border: 2px solid #e5e5e5;
-    padding: 30px;
+    padding: 0 20px 56px 57px;
   }
   @include lg {
     width: 940px;
@@ -29,6 +29,10 @@
   text-transform: uppercase;
   margin-bottom: 45px;
   padding: 0 25px;
+  @include md {
+    padding: 0 31px;
+    margin-bottom: 48px;
+  }
 }
 
 .achievement__list {
@@ -91,6 +95,9 @@
     border-radius: 3px;
     left: 0;
     top: -4px;
+  }
+  @include md {
+    padding-left: 60px;
   }
 }
 

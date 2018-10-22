@@ -1,7 +1,7 @@
 .text-fields {
   margin-bottom: 43px;
   @include md {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
     order: 1;
   }
 }
@@ -47,16 +47,19 @@
 
 .text-fields__input {
   width: 100%;
-  padding: 21px;
+  padding: 15px 21px;
   border: 2px solid #e5e5e5;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
   @include md {
-    padding-top: 22px;
+    padding-top: 14px;
   }
 }
 
 .text-fields__item {
   &:not(:last-child) {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
   @include md {
     display: flex;

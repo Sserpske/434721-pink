@@ -3,6 +3,8 @@
   margin-bottom: 32px;
   @include md {
     order: 5;
+    padding-top: 2px;
+    margin-bottom: 67px;
   }
 }
 
@@ -14,7 +16,7 @@
   @include md {
     width: 620px;
     border: 2px solid #e5e5e5;
-    padding: 30px;
+    padding: 31px 57px 43px;
   }
   @include lg {
     width: 940px;
@@ -27,7 +29,7 @@
   text-transform: uppercase;
   text-align: center;
   @include md {
-    padding: 0 20px;
+    padding: 0 38px;
   }
 }
 
@@ -39,6 +41,13 @@
 
 .emotion__text {
   width: 100%;
-  padding: 15px 18px 22px 18px;
+  padding: 15px 18px 4px 18px;
   border: 2px solid #e5e5e5;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  @include md {
+    padding-bottom: 0;
+    padding-top: 14px;
+  }
 }

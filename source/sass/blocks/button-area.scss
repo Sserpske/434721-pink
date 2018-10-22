@@ -8,6 +8,7 @@
     width: 620px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
   }
   @include lg {
     width: 940px;
@@ -41,6 +42,9 @@
   color: #283645;
   text-align: center;
   text-transform: uppercase;
+  @include md {
+    padding-top: 4px;
+  }
 }
 
 .button-area__star {

@@ -19,6 +19,8 @@
   }
   @include lg {
     width: 940px;
+    padding-bottom: 9px;
+    padding-right: 2px;
   }
 }
 
@@ -46,6 +48,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -54,7 +57,7 @@
     margin-bottom: 52px;
   }
   @include lg {
-    width: 280px;
+    width: 260px;
     &:first-child {
       order: 1;
     }

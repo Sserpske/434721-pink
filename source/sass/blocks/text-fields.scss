@@ -17,6 +17,7 @@
   }
   @include lg {
     width: 435px;
+    padding-top: 15px;
   }
 }
 
@@ -67,6 +68,11 @@
     align-items: center;
     &:not(:last-child) {
       margin-bottom: 52px;
+    }
+  }
+  @include lg {
+    &:not(:last-child) {
+      margin-bottom: 53px;
     }
   }
 }

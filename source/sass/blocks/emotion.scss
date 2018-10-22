@@ -6,6 +6,9 @@
     padding-top: 2px;
     margin-bottom: 67px;
   }
+  @include lg {
+    margin-bottom: 65px;
+  }
 }
 
 .emotion__field {
@@ -20,6 +23,7 @@
   }
   @include lg {
     width: 940px;
+    padding: 28px 58px 37px;
   }
 }
 
@@ -49,5 +53,8 @@
   @include md {
     padding-bottom: 0;
     padding-top: 14px;
+  }
+  @include lg {
+    height: 128px;
   }
 }

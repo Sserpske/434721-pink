@@ -8,7 +8,7 @@
   }
   @include lg {
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 57px;
   }
 }
 
@@ -23,7 +23,8 @@
     padding: 9px 30px 59px 57px;
   }
   @include lg {
-    width: 431px;
+    width: 435px;
+    padding: 12px 30px 59px 30px;
   }
 }
 
@@ -35,7 +36,10 @@
   padding: 0;
   margin-bottom: 40px;
   @include md {
-    padding: 0 26px 0;
+    padding: 0 26px;
+  }
+  @include lg {
+    padding: 0 25px;
   }
 }
 
@@ -71,6 +75,9 @@
 
 .application-type__list {
   @include list-none
+  @include lg {
+    padding-left: 43px;
+  }
 }
 
 .application-type__item input {

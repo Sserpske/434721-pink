@@ -4,7 +4,7 @@
     margin-bottom: 20px;
   }
   @include lg {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 
@@ -20,6 +20,8 @@
   }
   @include lg {
     width: 940px;
+    padding-top: 35px;
+    padding-bottom: 9px;
   }
 }
 
@@ -38,11 +40,11 @@
       position: absolute;
       content: "";
       width: 60px;
-      height: 59px;
+      height: 60px;
       background-repeat: no-repeat;
       background-color: #e5e5e5;
       background-position: center;
-      top: -71px;
+      top: -72px;
       right: 2px;
     }
     &--tel {
@@ -117,6 +119,9 @@
     margin-bottom: 18px;
     @include md {
       margin-bottom: 24px;
+    }
+    @include lg {
+      margin-bottom: 0;
     }
   }
   @include md {

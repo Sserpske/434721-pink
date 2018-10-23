@@ -48,7 +48,7 @@
   }
   .application__wrapper {
     @include md {
-    padding-top: 164px;
+      padding-top: 164px;
     }
     @include lg {
       padding-top: 167px;
@@ -165,6 +165,7 @@
 }
 
 .page-header__logo {
+  cursor: pointer;
   fill: #ffffff;
   &:hover {
     fill: $pink;

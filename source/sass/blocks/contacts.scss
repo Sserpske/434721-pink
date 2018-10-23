@@ -109,10 +109,17 @@
   line-height: 29px;
   font-weight: 300;
   color: #d22856;
-}
-
-.contacts__content--address {
-  font-style: normal;
+  &--address {
+    font-style: normal;
+  }
+  &--mail {
+    &:hover {
+      color: $blue;
+    }
+    &:active {
+      color: rgba($blue, 0.3);
+    }
+  }
 }
 
 .contacts__map {

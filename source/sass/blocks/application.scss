@@ -122,6 +122,14 @@
   border: 3px solid #ffffff;
   border-radius: 30px;
   margin-bottom: 32px;
+  &:hover {
+    color: $pink;
+    background-color: #ffffff;
+  }
+  &:active {
+    background-color: #ffffff;
+    color: rgba($pink, 0.3);
+  }
   @include md {
     min-width: 300px;
     margin-bottom: 45px;

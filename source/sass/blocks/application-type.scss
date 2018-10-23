@@ -71,6 +71,12 @@
     left: 0;
     top: -4px;
   }
+  &:hover::before {
+    border-color: $blue;
+  }
+  &:active::before {
+    border-color: $pink;
+  }
 }
 
 .application-type__list {
@@ -78,10 +84,6 @@
   @include lg {
     padding-left: 43px;
   }
-}
-
-.application-type__item input {
-  display: none;
 }
 
 .application-type__item input:checked + .application-type__radio::after {

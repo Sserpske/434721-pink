@@ -53,6 +53,13 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+  &:hover {
+    border-color: $blue;
+  }
+  &:focus {
+    border-color: $pink;
+    outline: none;
+  }
   @include md {
     padding-top: 14px;
   }

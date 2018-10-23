@@ -30,6 +30,15 @@
   @include md {
     width: 300px;
   }
+  &:hover {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+  &[disabled] {
+    background-color: #e5e5e5;
+  }
 }
 
 .pop-up__button-wrapper {

@@ -84,6 +84,13 @@
 
 .page-header__toggle {
   display: none;
+  fill: #ffffff;
+  &:hover {
+    fill: $pink;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__menu--closed,
@@ -154,5 +161,16 @@
   display: none;
   @include lg {
     display: block;
+  }
+}
+
+.page-header__logo {
+  fill: #ffffff;
+  &:hover {
+    fill: $pink;
+  }
+  &:active {
+    fill: #ffffff;
+    opacity: 0.3;
   }
 }

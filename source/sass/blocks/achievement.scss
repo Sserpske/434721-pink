@@ -102,6 +102,12 @@
   @include md {
     padding-left: 60px;
   }
+  &:hover::before {
+    border-color: $blue;
+  }
+  &:active::before {
+    border-color: $pink;
+  }
 }
 
 .achievement__item input:checked + .achievement__checkbox::before {

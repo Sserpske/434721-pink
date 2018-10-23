@@ -34,10 +34,14 @@
 }
 
 .feedback__item {
+  display: none;
   margin: 0;
-  @include md {
+  &--active {
+    display: block;
+    @include md {
     display: flex;
     flex-direction: column;
+    }
   }
 }
 
@@ -95,10 +99,22 @@
   cursor: pointer;
   margin-right: 5px;
   margin-left: 5px;
-  background-color: #bec2c7;
+  background-color: rgba($blue, 0.3);
+  &:hover {
+    background-color: rgba($blue, 0.6);
+  }
+  &:active {
+    background-color: rgba($blue, 0.1);
+  }
   &--active {
     border: 3px solid $blue;
     background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+    &:active {
+      background-color: transparent;
+    }
   }
 }
 
@@ -116,6 +132,12 @@
   cursor: pointer;
   opacity: 0.3;
   background-repeat: no-repeat;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.1;
+  }
   @include lg {
     display: block;
   }

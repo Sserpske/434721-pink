@@ -47,6 +47,29 @@
   width: 260px;
   padding: 14px 0 15px 0;
   margin-left: 2px;
+  &[type="submit"] {
+    &:hover {
+    background-color: $pink;
+    color: #ffffff;
+    }
+    &:active {
+    background-color: $pink;
+    color: rgba(#ffffff, 0.3);
+    }
+  }
+  &[type="reset"] {
+    color: rgba($blue, 0.1);
+    border-color: rgba($blue, 0.1);
+    &:hover {
+      color: rgba($blue, 0.3);
+      border-color: rgba($blue, 0.3);
+    }
+    &:active {
+      background-color: #b5b9be;
+      color: rgba(#ffffff, 0.3);
+      border-color: #b5b9be;
+    }
+  }
   @include sm {
     width: 280px;
     margin: 0;
@@ -65,11 +88,6 @@
     margin-right: 38px;
     margin-bottom: 0;
   }
-}
-
-.photo-load__button:disabled {
-  color: rgba(#283645, 0.1);
-  border-color: rgba(#283645, 0.1);
 }
 
 .photo-load__image {
@@ -122,6 +140,7 @@
     width: 24px;
     height: 24px;
     fill: rgba($blue, 0.3);
+    cursor: pointer;
     &:hover {
       fill: rgba($blue, 0.5);
     }
@@ -143,6 +162,9 @@
   &--active {
     svg {
       fill: $pink;
+      &:hover {
+        fill: $pink;
+      }
     }
   }
 }

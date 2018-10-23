@@ -1,11 +1,13 @@
 .application-type {
   background-color: #f2f2f2;
   padding: 38px 0 48px 0;
+
   @include md {
     order: 2;
     background-color: transparent;
     margin-bottom: 10px;
   }
+
   @include lg {
     padding: 0;
     margin-bottom: 57px;
@@ -17,11 +19,13 @@
   margin: 0 auto;
   border: 0;
   padding: 0;
+
   @include md {
     width: 620px;
     border: 2px solid #e5e5e5;
     padding: 9px 30px 59px 57px;
   }
+
   @include lg {
     width: 435px;
     padding: 12px 30px 59px 30px;
@@ -35,9 +39,11 @@
   text-align: center;
   padding: 0;
   margin-bottom: 40px;
+
   @include md {
     padding: 0 26px;
   }
+
   @include lg {
     padding: 0 25px;
   }
@@ -57,9 +63,11 @@
   position: relative;
   padding-left: 69px;
   cursor: pointer;
+
   @include md {
     padding-left: 60px;
   }
+
   &::before {
     content: "";
     width: 39px;
@@ -71,9 +79,11 @@
     left: 0;
     top: -4px;
   }
+
   &:hover::before {
     border-color: $blue;
   }
+
   &:active::before {
     border-color: $pink;
   }
@@ -81,24 +91,23 @@
 
 .application-type__list {
   @include list-none
-  @include lg {
+    @include lg {
     padding-left: 43px;
   }
 }
 
 .application-type__item input:checked + .application-type__radio::after {
   content: "";
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    background-color: #d22856;
-    border-radius: 20px;
-    left: 12px;
-    top: 8px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #d22856;
+  border-radius: 20px;
+  left: 12px;
+  top: 8px;
 }
 
 .application-type__item input:focus + .application-type__radio {
   background-color: red;
   border: 1px dashed black;
 }
-

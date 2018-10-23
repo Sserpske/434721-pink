@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 40px 0;
+
   @include md {
     flex-direction: row;
     justify-content: space-between;
@@ -12,6 +13,7 @@
     margin: 0 auto;
     padding-top: 35px;
   }
+
   @include lg {
     width: 940px;
     padding-top: 50px;
@@ -20,6 +22,7 @@
 
 .footer--main-page {
   display: none;
+
   @include md {
     display: flex;
   }
@@ -30,6 +33,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
   @include md {
     padding-top: 15px;
   }
@@ -40,6 +44,7 @@
   color: #283645;
   padding-right: 15px;
   padding-bottom: 10px;
+
   @include lg {
     font-size: 18px;
   }
@@ -47,15 +52,20 @@
 
 .footer__pink-logo {
   margin-bottom: 32px;
+
   svg {
     fill: $blue;
+
     &:hover {
       fill: $pink;
     }
+
     &:active {
       fill: $blue;
-      opacity: 0.3;    }
+      opacity: 0.3;
+    }
   }
+
   @include md {
     margin-bottom: 0;
   }
@@ -63,11 +73,13 @@
 
 .footer__social {
   margin-bottom: 34px;
+
   @include md {
     margin-bottom: 0;
     margin-right: 6px;
     padding-top: 3px;
   }
+
   @include lg {
     margin-right: 0;
     margin-left: 30px;
@@ -83,12 +95,15 @@
   background-repeat: no-repeat;
   background-position: center center;
   margin-right: 6px;
+
   &:hover {
     border-color: $blue;
   }
+
   &:active {
     opacity: 0.3;
   }
+
   @include md {
     margin-right: 10px;
   }
@@ -110,10 +125,12 @@
   &--desktop {
     display: none;
   }
+
   @include lg {
     &--mobile {
       display: none;
     }
+
     &--desktop {
       display: block;
     }
@@ -122,10 +139,12 @@
 
 .footer__academy-logo svg {
   fill: $pink;
+
   &:hover {
     fill: $blue;
   }
+
   &:active {
-    fill: rgba($blue, 0.3)
+    fill: rgba($blue, 0.3);
   }
 }

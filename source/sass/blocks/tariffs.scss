@@ -5,13 +5,14 @@
   overflow: hidden;
   background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  width: 100%;
   background-size: contain;
   background-position: -5px 0;
+
   @include md {
     padding-top: 88px;
     padding-bottom: 35px;
   }
+
   @include lg {
     padding-top: 148px;
     padding-bottom: 63px;
@@ -22,11 +23,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @include md {
     width: 620px;
     display: block;
     margin: 0 auto;
   }
+
   @include lg {
     width: 940px;
   }
@@ -51,16 +54,20 @@
 .tariffs__name {
   font-size: 18px;
   padding-top: 19px;
+
   @include md {
     font-size: 16px;
     padding-top: 15px;
   }
+
   @include lg {
     font-size: 18px;
     padding-top: 20px;
   }
+
   &--hit {
     position: relative;
+
     &::before {
       content: "хит";
       position: absolute;
@@ -71,15 +78,18 @@
       color: #ffffff;
       transform: rotate(-45deg);
       z-index: 3;
+
       @include md {
         top: 7px;
         left: 7px;
       }
+
       @include lg {
         top: 14px;
         left: 10px;
       }
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -89,12 +99,14 @@
       background-repeat: no-repeat;
       top: 0;
       left: -2px;
+
       @include md {
         width: 61px;
         height: 61px;
         background-image: url("../../img/bg-hit-tablet.svg");
         left: 0;
       }
+
       @include lg {
         width: 74px;
         height: 73px;
@@ -123,11 +135,13 @@
   font-weight: 300;
   margin-top: 8px;
   margin-bottom: 22px;
+
   @include md {
     font-size: 18px;
     margin-top: 3px;
     margin-bottom: 12px;
   }
+
   @include lg {
     font-size: 24px;
     margin-top: 7px;
@@ -135,11 +149,14 @@
   }
 }
 
-.tariffs__name, .tariffs__option {
+.tariffs__name,
+.tariffs__option {
   min-width: 278px;
+
   @include md {
     min-width: 155px;
   }
+
   @include lg {
     min-width: 235px;
   }
@@ -149,9 +166,11 @@
   border: 2px solid #e5e5e5;
   border-top: none;
   padding: 18px 20px 17px 21px;
+
   @include md {
     padding: 10px 20px 11px 15px;
   }
+
   @include lg {
     font-size: 18px;
     padding: 17px 20px 19px 22px;
@@ -163,8 +182,10 @@
   border: none;
 }
 
-.tariffs__option--mob-hidden, .tariffs__name--mob-hidden {
+.tariffs__option--mob-hidden,
+.tariffs__name--mob-hidden {
   display: none;
+
   @include md {
     display: table-cell;
   }
@@ -189,9 +210,11 @@
   background-repeat: no-repeat;
   background-size: 32px 23px;
   background-position: 229px 18px;
+
   @include md {
     background-position: 62px 10px;
   }
+
   @include lg {
     background-position: 101px 21px;
   }
@@ -201,9 +224,11 @@
   background-image: url("../../img/icon-no.svg");
   background-repeat: no-repeat;
   background-position: 230px 15px;
+
   @include md {
     background-position: 64px 8px;
   }
+
   @include lg {
     background-position: 103px 16px;
   }
@@ -218,22 +243,28 @@
   margin-right: 5px;
   margin-left: 5px;
   background-color: rgba($blue, 0.3);
+
   &:hover {
     background-color: rgba($blue, 0.6);
   }
+
   &:active {
     background-color: rgba($blue, 0.1);
   }
+
   &--active {
     border: 3px solid $blue;
     background-color: transparent;
+
     &:hover {
       background-color: transparent;
     }
+
     &:active {
       background-color: transparent;
     }
   }
+
   @include md {
     display: none;
   }

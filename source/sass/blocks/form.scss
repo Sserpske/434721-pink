@@ -6,12 +6,14 @@
   margin: 0 auto;
   padding-top: 45px;
   padding-bottom: 27px;
+
   @include md {
     font-size: 18px;
     width: 500px;
     padding-top: 93px;
     padding-bottom: 62px;
   }
+
   @include lg {
     width: 760px;
     margin-bottom: 7px;
@@ -20,6 +22,7 @@
 
 .form__text-hidden {
   display: none;
+
   @include md {
     display: inline;
   }
@@ -30,6 +33,7 @@
     display: flex;
     flex-direction: column;
   }
+
   @include lg {
     width: 940px;
     margin: 0 auto;

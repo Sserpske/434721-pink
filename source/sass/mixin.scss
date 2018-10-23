@@ -10,10 +10,9 @@ $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
 
-
 @mixin retina {
   @media (min-resolution: #{$retina-dpi}),
-  (min-resolution: #{$retina-dppx}) {
+    (min-resolution: #{$retina-dppx}) {
     @content;
   }
 }

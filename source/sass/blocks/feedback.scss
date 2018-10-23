@@ -7,11 +7,13 @@
   margin-bottom: 15px;
   z-index: 1;
   background-color: #ffffff;
+
   @include md {
     padding-top: 34px;
     padding-bottom: 14px;
     margin-bottom: 0;
   }
+
   @include lg {
     background-image: url("../../img/icon-quotes.svg");
     background-repeat: no-repeat;
@@ -24,9 +26,11 @@
 .feedback__wrapper {
   width: 280px;
   margin: 0 auto;
+
   @include md {
     width: 620px;
   }
+
   @include lg {
     width: 950px;
     position: relative;
@@ -36,11 +40,13 @@
 .feedback__item {
   display: none;
   margin: 0;
+
   &--active {
     display: block;
+
     @include md {
-    display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
     }
   }
 }
@@ -59,10 +65,12 @@
   font-weight: 700;
   margin: 0;
   margin-bottom: 13px;
+
   @include md {
     font-size: 20px;
     margin-bottom: 2px;
   }
+
   @include lg {
     font-size: 24px;
   }
@@ -73,9 +81,11 @@
   display: none;
   margin: 0;
   margin-bottom: 23px;
+
   @include md {
     display: block;
   }
+
   @include lg {
     font-size: 18px;
   }
@@ -84,6 +94,7 @@
 .feedback__description {
   margin-top: 11px;
   margin-bottom: 22px;
+
   @include md {
     font-size: 18px;
     order: -1;
@@ -100,18 +111,23 @@
   margin-right: 5px;
   margin-left: 5px;
   background-color: rgba($blue, 0.3);
+
   &:hover {
     background-color: rgba($blue, 0.6);
   }
+
   &:active {
     background-color: rgba($blue, 0.1);
   }
+
   &--active {
     border: 3px solid $blue;
     background-color: transparent;
+
     &:hover {
       background-color: transparent;
     }
+
     &:active {
       background-color: transparent;
     }
@@ -132,12 +148,15 @@
   cursor: pointer;
   opacity: 0.3;
   background-repeat: no-repeat;
+
   &:hover {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.1;
   }
+
   @include lg {
     display: block;
   }

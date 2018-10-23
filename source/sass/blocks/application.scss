@@ -11,10 +11,12 @@
   background-repeat: no-repeat;
   background-position: 5% bottom, center bottom;
   background-size: auto, cover;
+
   @include retina {
     background-image: url("../../img/iphone-hand-mobile@2x.png"), url("../../img/bg-back-mobile@2x.jpg");
     background-size: 258px auto, 221%;
   }
+
   @include md {
     position: absolute;
     width: 100%;
@@ -22,15 +24,18 @@
     background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
     background-position: center bottom, center bottom;
     background-size: auto, 182%;
+
     @include retina {
       background-image: url("../../img/iphone-hand-tablet@2x.png"), url("../../img/bg-back-tablet@2x.jpg");
       background-size: 700px auto, 182%;
     }
   }
+
   @include lg {
     background-image: url("../../img/iphone-hand-desktop@1x.png"), url("../../img/bg-back-desktop@1x.jpg");
     background-size: auto, 213.5%;
     background-position: 98% bottom, center bottom;
+
     @include retina {
       background-image: url("../../img/iphone-hand-desktop@2x.png"), url("../../img/bg-back-desktop@2x.jpg");
       background-size: 1050px auto, 213.5%;
@@ -47,6 +52,7 @@
   padding-top: 28px;
   padding-bottom: 16px;
   width: 280px;
+
   @include md {
     padding-top: 54px;
     padding-bottom: 92px;
@@ -56,6 +62,7 @@
     z-index: 2;
     margin: 0;
   }
+
   @include lg {
     width: 940px;
     padding-right: 640px;
@@ -73,10 +80,12 @@
   align-items: center;
   padding: 0 20px;
   margin-bottom: 21px;
+
   @include md {
     padding: 0 50px;
     margin-bottom: 36px;
   }
+
   @include lg {
     margin-bottom: 54px;
     padding: 0 30px;
@@ -85,9 +94,11 @@
 
 .application__available {
   font-weight: 300;
+
   @include md {
     font-size: 18px;
   }
+
   @include lg {
     margin-top: 50px;
   }
@@ -99,10 +110,12 @@
   line-height: 48px;
   display: none;
   margin-bottom: 30px;
+
   @include md {
     display: block;
     padding: 0 50px;
   }
+
   @include lg {
     font-size: 50px;
     line-height: 60px;
@@ -122,45 +135,50 @@
   border: 3px solid #ffffff;
   border-radius: 30px;
   margin-bottom: 32px;
+
   &:hover {
     color: $pink;
     background-color: #ffffff;
   }
+
   &:active {
     background-color: #ffffff;
     color: rgba($pink, 0.3);
   }
+
   @include md {
     min-width: 300px;
     margin-bottom: 45px;
   }
+
   @include lg {
     font-size: 21px;
     margin-bottom: 69px;
   }
 }
 
-
-
 .application__icon {
   display: inline-block;
   background-repeat: no-repeat;
   margin: 0 10px;
+
   &--apple {
     width: 45.21px;
     height: 56.753px;
-    background-image: url('../../img/logo-apple.svg');
+    background-image: url("../../img/logo-apple.svg");
   }
+
   &--android {
     width: 42.084px;
     height: 47.041px;
-    background-image: url('../../img/logo-android.svg');
+    background-image: url("../../img/logo-android.svg");
     margin-top: 7px;
   }
+
   &--windows {
     width: 43.922px;
     height: 41px;
-    background-image: url('../../img/logo-microsoft.svg');
+    background-image: url("../../img/logo-microsoft.svg");
     margin-top: 8px;
   }
 }

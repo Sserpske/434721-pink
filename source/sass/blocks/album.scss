@@ -1,14 +1,23 @@
 .album__wrapper {
   @include md {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 620px;
-  margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
   }
+
   @include lg {
     width: 940px;
+  }
+
+  .album__photo:last-child,
+  .album__photo:nth-last-child(2),
+  .album__photo:nth-last-child(3) {
+    @include lg {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -17,6 +26,7 @@
   background-color: #f2f2f2;
   margin: 0 auto;
   padding: 17px 10px 21px 17px;
+
   @include md {
     width: 300px;
     min-height: 155px;
@@ -39,6 +49,7 @@
     padding-bottom: 17px;
     padding-right: 28px;
   }
+
   @include lg {
     width: 940px;
     min-height: 95px;
@@ -49,14 +60,17 @@
 .album__photo {
   position: relative;
   margin-bottom: 20px;
+
   @include lg {
     margin-bottom: 54px;
   }
+
   &--panorama {
     @include md {
       overflow: hidden;
       margin-bottom: 50px;
     }
+
     &::before {
       content: "Панорама дня";
       position: absolute;
@@ -69,27 +83,19 @@
       top: 0;
       font-size: 12px;
       line-height: 24px;
-      color: #fff;
+      color: #ffffff;
       text-transform: uppercase;
       background-color: #d22856;
       z-index: 2;
+
       @include md {
         top: 57px;
       }
+
       @include lg {
         top: 54px;
         right: 130px;
       }
-    }
-  }
-}
-
-.album__wrapper {
-  .album__photo:last-child,
-  .album__photo:nth-last-child(2),
-  .album__photo:nth-last-child(3) {
-    @include lg {
-      margin-bottom: 0;
     }
   }
 }
@@ -101,11 +107,13 @@
 
 .album__photo-image--panorama {
   width: 100%;
+
   @include md {
     width: 106%;
     position: relative;
     left: -20px;
   }
+
   @include lg {
     width: 100%;
     left: 0;
@@ -116,6 +124,7 @@
 .album__user-name {
   font-weight: 700;
   color: #283645;
+
   @include md {
     order: 1;
   }
@@ -126,6 +135,7 @@
   color: #283645;
   font-weight: 300;
   text-transform: uppercase;
+
   @include md {
     order: 2;
   }
@@ -135,6 +145,7 @@
   color: #283645;
   margin: 0;
   margin-bottom: 9px;
+
   @include md {
     order: 4;
     margin-bottom: 8px;
@@ -150,6 +161,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+
   @include md {
     order: 3;
     margin: 0;
@@ -164,6 +176,7 @@
   background-repeat: no-repeat;
   margin-right: 18px;
   margin-top: 2px;
+
   @include md {
     order: 2;
     margin-right: 0;

@@ -6,6 +6,7 @@
   text-transform: uppercase;
   position: relative;
   z-index: 1;
+
   @include lg {
     text-transform: none;
     line-height: 18px;
@@ -15,6 +16,7 @@
 
 .main-nav__list {
   @include list-none;
+
   @include lg {
     width: 620px;
     display: flex;
@@ -26,13 +28,16 @@
 
 .main-nav__item a {
   color: #ffffff;
+
   &:hover {
     color: $pink;
   }
+
   &:active {
     color: rgba($pink, 0.3);
+
     @include lg {
-      color: rgba(#ffffff, 0.3)
+      color: rgba(#ffffff, 0.3);
     }
   }
 }
@@ -40,6 +45,7 @@
 .main-nav__item--active a {
   @include lg {
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
@@ -50,8 +56,9 @@
       left: 0;
     }
   }
+
   &:hover {
-  color: #ffffff;
+    color: #ffffff;
   }
 }
 
@@ -59,11 +66,13 @@
   padding-top: 16px;
   padding-bottom: 15px;
   box-shadow:
-              inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15),
-              0px 1px 0px 0px #000000;
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.15),
+    0 1px 0 0 #000000;
+
   &:not(:last-child) {
     margin-bottom: 1px;
   }
+
   @include lg {
     box-shadow: none;
   }

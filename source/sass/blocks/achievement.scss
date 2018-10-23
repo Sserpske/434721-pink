@@ -1,6 +1,7 @@
 .achievement {
   background-color: #f2f2f2;
   padding: 37px 0 49px 0;
+
   @include md {
     order: 4;
     background-color: transparent;
@@ -12,11 +13,13 @@
   margin: 0 auto;
   border: 0;
   padding: 0;
+
   @include md {
     width: 620px;
     border: 2px solid #e5e5e5;
     padding: 0 20px 56px 57px;
   }
+
   @include lg {
     width: 940px;
     padding-bottom: 9px;
@@ -31,6 +34,7 @@
   text-transform: uppercase;
   margin-bottom: 45px;
   padding: 0 25px;
+
   @include md {
     padding: 0 31px;
     margin-bottom: 48px;
@@ -44,6 +48,7 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+
   @include lg {
     display: flex;
     flex-direction: row;
@@ -61,6 +66,7 @@
   position: relative;
   padding-left: 69px;
   cursor: pointer;
+
   &::before {
     content: "";
     width: 39px;
@@ -72,12 +78,15 @@
     left: 0;
     top: -4px;
   }
+
   @include md {
     padding-left: 60px;
   }
+
   &:hover::before {
     border-color: $blue;
   }
+
   &:active::before {
     border-color: $pink;
   }
@@ -87,40 +96,49 @@
   &:not(:last-child) {
     margin-bottom: 52px;
   }
+
   @include lg {
     width: 260px;
+
     &:first-child {
       order: 1;
     }
+
     &:nth-child(2) {
       order: 4;
     }
+
     &:nth-child(3) {
       order: 2;
+
       .achievement__checkbox::before {
         left: 6px;
       }
     }
+
     &:nth-child(4) {
       order: 5;
     }
+
     &:nth-child(5) {
       order: 3;
+
       .achievement__checkbox::before {
         left: -7px;
       }
     }
+
     &:last-child {
       order: 6;
     }
   }
 
-//3 8 11
-  &:nth-child(3n+5):before {
-     left: 6px;
+  //3 8 11
+  &:nth-child(3n+5)::before {
+    left: 6px;
   }
 
-  &:nth-child(3n+6):before {
+  &:nth-child(3n+6)::before {
     left: -7px;
   }
 }

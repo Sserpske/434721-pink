@@ -96,3 +96,9 @@
     left: 12px;
     top: 8px;
 }
+
+.application-type__item input:focus + .application-type__radio {
+  background-color: red;
+  border: 1px dashed black;
+}
+

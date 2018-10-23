@@ -44,16 +44,14 @@
     line-height: 60px;
     padding: 70px 0 140px 0;
   }
-  &--form {
-    @include md {
-      padding-bottom: 80px;
-    }
-  }
   @include lg {
     padding: 173px 0 102px 0;
   }
   &--form {
     padding-bottom: 52px;
+    @include md {
+      padding-bottom: 80px;
+    }
     @include lg {
       width: 750px;
       padding-bottom: 101px;

@@ -69,6 +69,19 @@
   }
 }
 
+.page-header__menu--closed + .form,
+.page-header__menu--opened + .form {
+  .inner-background__title {
+    padding-top: 96px;
+    @include md {
+      padding-top: 180px;
+    }
+    @include lg {
+      padding-top: 173px;
+    }
+  }
+}
+
 .page-header__toggle {
   display: none;
 }

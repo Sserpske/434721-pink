@@ -108,6 +108,6 @@
 }
 
 .application-type__item input:focus + .application-type__radio {
-  background-color: red;
-  border: 1px dashed black;
+  outline: 1px dashed $pink;
+  outline-offset: 5px;
 }

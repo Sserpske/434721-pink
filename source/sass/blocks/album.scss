@@ -31,9 +31,10 @@
     width: 300px;
     min-height: 155px;
     padding: 23px 33px 23px 28px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
   }
 }
 
@@ -120,7 +121,6 @@
   }
 }
 
-
 .album__user-name {
   font-weight: 700;
   color: #283645;
@@ -163,9 +163,25 @@
   justify-content: flex-start;
 
   @include md {
+    position: absolute;
+    bottom: 23px;
+    width: 240px;
     order: 3;
     margin: 0;
     justify-content: space-between;
+  }
+
+  &--panorama {
+    @include md {
+      width: 120px;
+      bottom: 74px;
+      right: 29px;
+    }
+
+    @include lg {
+      bottom: 48px;
+      right: 32px;
+    }
   }
 }
 
@@ -180,14 +196,6 @@
   @include md {
     order: 2;
     margin-right: 0;
-  }
-}
-
-.album__likes--panorama {
-  .album__likes-heart {
-    @include md {
-      margin-left: 19px;
-    }
   }
 }
 

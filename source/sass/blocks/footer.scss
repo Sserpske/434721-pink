@@ -110,15 +110,15 @@
 }
 
 .footer__social-link--twitter {
-  background-image: url("../../img/icon-twitter.svg");
+  background-image: url("#{$path}icon-twitter.svg");
 }
 
 .footer__social-link--facebook {
-  background-image: url("../../img/icon-facebook.svg");
+  background-image: url("#{$path}icon-facebook.svg");
 }
 
 .footer__social-link--youtube {
-  background-image: url("../../img/icon-youtube.svg");
+  background-image: url("#{$path}icon-youtube.svg");
 }
 
 .footer__pink-svg {

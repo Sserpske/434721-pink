@@ -152,7 +152,7 @@
     width: 100%;
     height: 69px;
     position: absolute;
-    background-image: url("../../img/bg-triangle-white-footer.svg");
+    background-image: url("#{$path}bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -166,7 +166,7 @@
   }
 
   @include md {
-    background-image: url("../../img/bg-triangle-white-footer.svg");
+    background-image: url("#{$path}bg-triangle-white-footer.svg");
     min-height: 372px;
     background-position: 0 0;
   }

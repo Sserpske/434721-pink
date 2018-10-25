@@ -147,7 +147,7 @@
 }
 
 .achievement__item input:checked + .achievement__checkbox::before {
-  background-image: url("../../img/icon-check.svg");
+  background-image: url("#{$path}icon-check.svg");
   background-repeat: no-repeat;
   background-size: 22px 16px;
   background-position: 7px 9px;

@@ -19,7 +19,7 @@
 .science__wrapper {
   width: 620px;
   margin: 0 auto;
-  background-image: url("../../img/icon-editor-diagram-fill.svg"), url("../../img/icon-timer.svg");
+  background-image: url("#{$path}icon-editor-diagram-fill.svg"), url("#{$path}icon-timer.svg");
   background-repeat: no-repeat;
   padding-top: 46px;
   padding-bottom: 40px;

@@ -55,14 +55,14 @@
 
     &--tel {
       &::after {
-        background-image: url("../../img/icon-phone.svg");
+        background-image: url("#{$path}icon-phone.svg");
         background-size: 20px 19px;
       }
     }
 
     &--mail {
       &::after {
-        background-image: url("../../img/icon-mail.svg");
+        background-image: url("#{$path}icon-mail.svg");
         background-size: 18px 13px;
       }
     }

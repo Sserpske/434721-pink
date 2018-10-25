@@ -15,7 +15,7 @@
   }
 
   @include lg {
-    background-image: url("../../img/icon-quotes.svg");
+    background-image: url("#{$path}icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: center 73px;
     padding-top: 176px;
@@ -163,13 +163,13 @@
 }
 
 .feedback__arrow--prev {
-  background-image: url("../../img/icon-review-arrow-left.svg");
+  background-image: url("#{$path}icon-review-arrow-left.svg");
   top: 37px;
   left: 6px;
 }
 
 .feedback__arrow--next {
-  background-image: url("../../img/icon-review-arrow-right.svg");
+  background-image: url("#{$path}icon-review-arrow-right.svg");
   top: 37px;
   right: 6px;
 }

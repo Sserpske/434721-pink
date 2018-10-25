@@ -3,7 +3,7 @@
   padding: 91px 0 43px 0;
   width: 100%;
   overflow: hidden;
-  background-image: url("../../img/bg-triangle-white.svg");
+  background-image: url("#{$path}bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: -5px 0;
@@ -95,7 +95,7 @@
       position: absolute;
       width: 74px;
       height: 73px;
-      background-image: url("../../img/bg-hit.svg");
+      background-image: url("#{$path}bg-hit.svg");
       background-repeat: no-repeat;
       top: 0;
       left: -2px;
@@ -103,14 +103,14 @@
       @include md {
         width: 61px;
         height: 61px;
-        background-image: url("../../img/bg-hit-tablet.svg");
+        background-image: url("#{$path}bg-hit-tablet.svg");
         left: 0;
       }
 
       @include lg {
         width: 74px;
         height: 73px;
-        background-image: url("../../img/bg-hit.svg");
+        background-image: url("#{$path}bg-hit.svg");
       }
     }
   }
@@ -206,7 +206,7 @@
 }
 
 .tariffs__option--yes {
-  background-image: url("../../img/icon-yes.svg");
+  background-image: url("#{$path}icon-yes.svg");
   background-repeat: no-repeat;
   background-size: 32px 23px;
   background-position: 229px 18px;
@@ -221,7 +221,7 @@
 }
 
 .tariffs__option--no {
-  background-image: url("../../img/icon-no.svg");
+  background-image: url("#{$path}icon-no.svg");
   background-repeat: no-repeat;
   background-position: 230px 15px;
 

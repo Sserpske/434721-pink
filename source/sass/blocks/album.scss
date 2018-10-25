@@ -1,9 +1,23 @@
 .album__wrapper {
   @include md {
-  display: flex;
-  flex-wrap: wrap;
-  width: 620px;
-  margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @include lg {
+    width: 940px;
+  }
+
+  .album__photo:last-child,
+  .album__photo:nth-last-child(2),
+  .album__photo:nth-last-child(3) {
+    @include lg {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -11,40 +25,106 @@
   width: 280px;
   background-color: #f2f2f2;
   margin: 0 auto;
-  padding: 18px 10px 5px 18px;
+  padding: 17px 10px 21px 17px;
+
   @include md {
     width: 300px;
     min-height: 155px;
+    padding: 23px 33px 23px 28px;
+    position: relative;
   }
 }
 
 .album__comment--panorama {
   @include md {
     width: 620px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    min-height: 120px;
+    padding-bottom: 17px;
+    padding-right: 28px;
+  }
+
+  @include lg {
+    width: 940px;
+    min-height: 95px;
+    padding-bottom: 16px;
   }
 }
 
 .album__photo {
-  margin: 0 auto;
+  position: relative;
+  margin-bottom: 20px;
+
+  @include lg {
+    margin-bottom: 54px;
+  }
+
+  &--panorama {
+    @include md {
+      overflow: hidden;
+      margin-bottom: 50px;
+    }
+
+    &::before {
+      content: "Панорама дня";
+      position: absolute;
+      width: 140px;
+      height: 36px;
+      text-align: center;
+      padding-top: 4px;
+      font-weight: 700;
+      right: 20px;
+      top: 0;
+      font-size: 12px;
+      line-height: 24px;
+      color: #ffffff;
+      text-transform: uppercase;
+      background-color: #d22856;
+      z-index: 2;
+
+      @include md {
+        top: 57px;
+      }
+
+      @include lg {
+        top: 54px;
+        right: 130px;
+      }
+    }
+  }
 }
 
 .album__photo-image {
   margin: 0 auto;
   display: block;
-  @include md {
-    width: 300px;
-  }
 }
 
 .album__photo-image--panorama {
   width: 100%;
+
   @include md {
+    width: 106%;
+    position: relative;
+    left: -20px;
+  }
+
+  @include lg {
+    width: 100%;
+    left: 0;
   }
 }
+
 .album__user-name {
   font-weight: 700;
-  font-style: normal;
   color: #283645;
+
+  @include md {
+    order: 1;
+  }
 }
 
 .album__time {
@@ -52,19 +132,72 @@
   color: #283645;
   font-weight: 300;
   text-transform: uppercase;
+
+  @include md {
+    order: 2;
+  }
 }
 
 .album__comment-text {
   color: #283645;
   margin: 0;
+  margin-bottom: 9px;
+
+  @include md {
+    order: 4;
+    margin-bottom: 8px;
+  }
 }
 
 .album__likes {
   font-size: 12px;
   color: #d22856;
   text-transform: uppercase;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  @include md {
+    position: absolute;
+    bottom: 23px;
+    width: 240px;
+    order: 3;
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  &--panorama {
+    @include md {
+      width: 120px;
+      bottom: 74px;
+      right: 29px;
+    }
+
+    @include lg {
+      bottom: 48px;
+      right: 32px;
+    }
+  }
 }
 
-.album__photo:not(:last-child) {
-  margin-bottom: 20px;
+.album__likes-heart {
+  width: 13px;
+  height: 12px;
+  background-image: url("#{$path}icon-heart.svg");
+  background-repeat: no-repeat;
+  margin-right: 18px;
+  margin-top: 2px;
+
+  @include md {
+    order: 2;
+    margin-right: 0;
+  }
+}
+
+.album__likes-count {
+  @include md {
+    order: 1;
+  }
 }

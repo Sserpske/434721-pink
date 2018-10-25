@@ -1,3 +1,4 @@
+@import "normalize.scss";
 @import "variable.scss";
 @import "global.scss";
 @import "mixin.scss";
@@ -5,7 +6,6 @@
 @import "blocks/main-nav.scss";
 @import "blocks/page-header.scss";
 @import "blocks/application.scss";
-@import "blocks/page-main.scss";
 @import "blocks/advantages.scss";
 @import "blocks/feedback.scss";
 @import "blocks/tariffs.scss";
@@ -23,3 +23,4 @@
 @import "blocks/footer.scss";
 @import "blocks/photo-load.scss";
 @import "blocks/science.scss";
+@import "blocks/inner-background.scss";

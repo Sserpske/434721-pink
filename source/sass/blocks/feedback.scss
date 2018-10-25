@@ -3,27 +3,34 @@
   line-height: 30px;
   text-align: center;
   padding-top: 42px;
-  padding-bottom: 37px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
   z-index: 1;
   background-color: #ffffff;
+
   @include md {
     padding-top: 34px;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
+    margin-bottom: 0;
   }
+
   @include lg {
-    background-image: url("../../img/icon-quotes.svg");
+    background-image: url("#{$path}icon-quotes.svg");
     background-repeat: no-repeat;
-    background-position: center 83px;
-    padding-top: 189px;
+    background-position: center 73px;
+    padding-top: 176px;
+    padding-bottom: 19px;
   }
 }
 
 .feedback__wrapper {
   width: 280px;
   margin: 0 auto;
+
   @include md {
     width: 620px;
   }
+
   @include lg {
     width: 950px;
     position: relative;
@@ -31,10 +38,16 @@
 }
 
 .feedback__item {
+  display: none;
   margin: 0;
-  @include md {
-    display: flex;
-    flex-direction: column;
+
+  &--active {
+    display: block;
+
+    @include md {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
@@ -50,10 +63,14 @@
   text-decoration: none;
   font-style: normal;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 13px;
+
   @include md {
     font-size: 20px;
     margin-bottom: 2px;
   }
+
   @include lg {
     font-size: 24px;
   }
@@ -63,10 +80,12 @@
   color: #283645;
   display: none;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
+
   @include md {
     display: block;
   }
+
   @include lg {
     font-size: 18px;
   }
@@ -74,21 +93,45 @@
 
 .feedback__description {
   margin-top: 11px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+
   @include md {
     font-size: 18px;
     order: -1;
-    margin-bottom: 35px;
+    margin-bottom: 36px;
   }
 }
 
 .feedback__toggle {
   width: 12px;
   height: 12px;
-  border: 3px solid #283645;
+  border: 3px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
-  margin-right: 7px;
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: rgba($blue, 0.3);
+
+  &:hover {
+    background-color: rgba($blue, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($blue, 0.1);
+  }
+
+  &--active {
+    border: 3px solid $blue;
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:active {
+      background-color: transparent;
+    }
+  }
 }
 
 .feedback__toggles-area {
@@ -105,19 +148,28 @@
   cursor: pointer;
   opacity: 0.3;
   background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
   @include lg {
     display: block;
   }
 }
 
 .feedback__arrow--prev {
-  background-image: url("../../img/icon-review-arrow-left.svg");
+  background-image: url("#{$path}icon-review-arrow-left.svg");
   top: 37px;
   left: 6px;
 }
 
 .feedback__arrow--next {
-  background-image: url("../../img/icon-review-arrow-right.svg");
+  background-image: url("#{$path}icon-review-arrow-right.svg");
   top: 37px;
   right: 6px;
 }

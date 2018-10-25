@@ -1,38 +1,3 @@
-.form__background {
-  background-color: #474f58;
-  position: relative;
-  width: 100%;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  @include md {
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
-  }
-}
-
-.form__title {
-  width: 280px;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 29px;
-  color: #ffffff;
-  text-align: center;
-  margin: 0 auto;
-  padding: 30px 0 54px 0;
-  @include md {
-    font-size: 50px;
-    line-height: 60px;
-    width: 480px;
-    padding: 70px 0 80px 0;
-  }
-  @include lg {
-    padding-top: 174px;
-    padding-bottom: 100px;
-    width: 750px;
-  }
-}
-
 .form__text {
   width: 280px;
   line-height: 30px;
@@ -40,19 +5,24 @@
   color: #283645;
   margin: 0 auto;
   padding-top: 45px;
-  padding-bottom: 20px;
+  padding-bottom: 27px;
+
   @include md {
     font-size: 18px;
     width: 500px;
+    padding-top: 93px;
+    padding-bottom: 62px;
   }
+
   @include lg {
     width: 760px;
-    margin-bottom: 30px;
+    margin-bottom: 7px;
   }
 }
 
 .form__text-hidden {
   display: none;
+
   @include md {
     display: inline;
   }
@@ -63,6 +33,7 @@
     display: flex;
     flex-direction: column;
   }
+
   @include lg {
     width: 940px;
     margin: 0 auto;

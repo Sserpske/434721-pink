@@ -1,6 +1,7 @@
 .achievement {
   background-color: #f2f2f2;
-  padding: 30px 0;
+  padding: 37px 0 49px 0;
+
   @include md {
     order: 4;
     background-color: transparent;
@@ -12,13 +13,17 @@
   margin: 0 auto;
   border: 0;
   padding: 0;
+
   @include md {
     width: 620px;
     border: 2px solid #e5e5e5;
-    padding: 30px;
+    padding: 0 20px 56px 57px;
   }
+
   @include lg {
     width: 940px;
+    padding-bottom: 9px;
+    padding-right: 10px;
   }
 }
 
@@ -27,8 +32,13 @@
   color: #d22856;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 43px;
+  margin-bottom: 45px;
   padding: 0 25px;
+
+  @include md {
+    padding: 0 31px;
+    margin-bottom: 48px;
+  }
 }
 
 .achievement__list {
@@ -38,47 +48,21 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+
   @include lg {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
-}
-
-.achievement__item {
-  @include lg {
-    width: 280px;
-    &:first-child {
-      order: 1;
-    }
-    &:nth-child(2) {
-      order: 4;
-    }
-    &:nth-child(3) {
-      order: 2;
-    }
-    &:nth-child(4) {
-      order: 5;
-    }
-    &:nth-child(5) {
-      order: 3;
-    }
-    &:last-child {
-      order: 6;
-    }
-  }
-}
-
-.achievement__item input {
-  display: none;
 }
 
 .achievement__checkbox {
   display: inline-block;
   position: relative;
-  margin-bottom: 52px;
   padding-left: 69px;
   cursor: pointer;
+
   &::before {
     content: "";
     width: 39px;
@@ -90,11 +74,86 @@
     left: 0;
     top: -4px;
   }
+
+  @include md {
+    padding-left: 60px;
+  }
+
+  &:hover::before {
+    border-color: $blue;
+  }
+
+  &:active::before {
+    border-color: $pink;
+  }
+}
+
+.achievement__item {
+  &:not(:last-child) {
+    margin-bottom: 52px;
+  }
+
+  @include lg {
+    width: 260px;
+
+    &:first-child {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 4;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+
+      .achievement__checkbox::before {
+        left: 11px;
+      }
+
+      .achievement__checkbox {
+        padding-left: 71px;
+      }
+    }
+
+    &:nth-child(4) {
+      order: 5;
+
+      .achievement__checkbox::before {
+        left: 11px;
+      }
+
+      .achievement__checkbox {
+        padding-left: 71px;
+      }
+    }
+
+    &:nth-child(5) {
+      order: 3;
+
+      .achievement__checkbox::before {
+        left: 2px;
+      }
+    }
+
+    &:last-child {
+      order: 6;
+
+      .achievement__checkbox::before {
+        left: 2px;
+      }
+    }
+  }
 }
 
 .achievement__item input:checked + .achievement__checkbox::before {
-  background-image: url("../../img/icon-check.svg");
+  background-image: url("#{$path}icon-check.svg");
   background-repeat: no-repeat;
   background-size: 22px 16px;
   background-position: 7px 9px;
+}
+
+.achievement__item input:focus + .achievement__checkbox {
+  outline: 1px dashed $pink;
+  outline-offset: 5px;
 }

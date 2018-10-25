@@ -2,42 +2,87 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0;
+  padding: 40px 0;
+
   @include md {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-start;
     width: 620px;
     margin: 0 auto;
-    @include lg {
-      width: 950px;
-    }
+    padding-top: 35px;
+  }
+
+  @include lg {
+    width: 940px;
+    padding-top: 50px;
   }
 }
 
 .footer--main-page {
   display: none;
+
   @include md {
     display: flex;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @include md {
+    padding-top: 15px;
   }
 }
 
 .footer__copyright-text {
   line-height: 18px;
   color: #283645;
+  padding-right: 15px;
+  padding-bottom: 10px;
+
+  @include lg {
+    font-size: 18px;
+  }
 }
 
 .footer__pink-logo {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+
+  svg {
+    fill: $blue;
+
+    &:hover {
+      fill: $pink;
+    }
+
+    &:active {
+      fill: $blue;
+      opacity: 0.3;
+    }
+  }
+
   @include md {
     margin-bottom: 0;
   }
 }
 
 .footer__social {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
+
   @include md {
     margin-bottom: 0;
+    margin-right: 6px;
+    padding-top: 3px;
+  }
+
+  @include lg {
+    margin-right: 0;
+    margin-left: 30px;
   }
 }
 
@@ -50,36 +95,56 @@
   background-repeat: no-repeat;
   background-position: center center;
   margin-right: 6px;
+
   &:hover {
     border-color: $blue;
   }
+
   &:active {
     opacity: 0.3;
+  }
+
+  @include md {
+    margin-right: 10px;
   }
 }
 
 .footer__social-link--twitter {
-  background-image: url("../../img/icon-twitter.svg");
+  background-image: url("#{$path}icon-twitter.svg");
 }
 
 .footer__social-link--facebook {
-  background-image: url("../../img/icon-facebook.svg");
+  background-image: url("#{$path}icon-facebook.svg");
 }
 
 .footer__social-link--youtube {
-  background-image: url("../../img/icon-youtube.svg");
+  background-image: url("#{$path}icon-youtube.svg");
 }
 
 .footer__pink-svg {
   &--desktop {
     display: none;
   }
+
   @include lg {
     &--mobile {
       display: none;
     }
+
     &--desktop {
       display: block;
     }
+  }
+}
+
+.footer__academy-logo svg {
+  fill: $pink;
+
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    fill: rgba($blue, 0.3);
   }
 }

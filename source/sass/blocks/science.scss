@@ -4,25 +4,29 @@
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 40px;
+
   @include md {
     display: block;
   }
+
   @include lg {
     background-color: #f2f2f2;
-    padding-top: 20px;
+    padding-top: 27px;
+    padding-bottom: 52px;
   }
 }
 
 .science__wrapper {
   width: 620px;
   margin: 0 auto;
-  background-image: url("../../img/icon-editor-diagram-fill.svg"), url("../../img/icon-timer.svg");
+  background-image: url("#{$path}icon-editor-diagram-fill.svg"), url("#{$path}icon-timer.svg");
   background-repeat: no-repeat;
   padding-top: 46px;
   padding-bottom: 40px;
   background-size: 202px 202px, 238px 276px;
-  background-position: 19px 64px, 1px 8px;
+  background-position: 19px 64px, 1px 9px;
   position: relative;
+
   &::after {
     position: absolute;
     content: "24";
@@ -30,14 +34,16 @@
     line-height: 96px;
     font-weight: 700;
     color: #d22856;
-    top: 115px;
+    top: 113px;
     left: 64px;
+
     @include lg {
       font-size: 120px;
       top: 142px;
       left: 80px;
     }
   }
+
   @include lg {
     width: 940px;
     padding-top: 91px;
@@ -50,6 +56,7 @@
 .science__description {
   width: 296px;
   margin: 0 15px 0 auto;
+
   @include lg {
     width: 532px;
     margin: 0 42px 0 auto;
@@ -62,8 +69,9 @@
   font-weight: 700;
   margin: 0;
   margin-bottom: 10px;
+
   @include lg {
-    margin-bottom: 21px;
+    margin-bottom: 23px;
   }
 }
 
@@ -71,6 +79,7 @@
   color: #283645;
   margin: 0;
   margin-bottom: 10px;
+
   @include lg {
     font-size: 18px;
     line-height: 30px;
@@ -81,6 +90,7 @@
 .science__link {
   color: #d22856;
   text-decoration: underline;
+
   @include lg {
     font-size: 18px;
     line-height: 30px;

@@ -2,13 +2,16 @@
   text-align: center;
   width: 280px;
   margin: 0 auto;
-  padding: 30px 0;
+  margin-bottom: 16px;
+
   @include md {
     order: 6;
     width: 620px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
   }
+
   @include lg {
     width: 940px;
     margin: 0;
@@ -25,8 +28,22 @@
   width: 280px;
   padding: 17px 0 16px 0;
   border-radius: 3px;
+  margin-bottom: 21px;
+
   @include md {
     width: 300px;
+  }
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+
+  &[disabled] {
+    background-color: #e5e5e5;
   }
 }
 
@@ -40,6 +57,10 @@
   color: #283645;
   text-align: center;
   text-transform: uppercase;
+
+  @include md {
+    padding-top: 4px;
+  }
 }
 
 .button-area__star {
@@ -48,6 +69,7 @@
 
 .button-area__hidden-text {
   display: none;
+
   @include lg {
     display: inline;
   }

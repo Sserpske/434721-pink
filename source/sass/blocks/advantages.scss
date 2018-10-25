@@ -1,10 +1,11 @@
 .advantages__outer-wrapper {
   background-color: #f2f2f2;
-  background-image: url("../../img/bg-triangle-white.svg");
+  background-image: url("#{$path}bg-triangle-white.svg");
   background-repeat: no-repeat;
   width: 100%;
   background-size: contain;
-  background-position: 0 0;
+  background-position: -5px 0;
+
   @include lg {
     padding-bottom: 5px;
   }
@@ -16,11 +17,13 @@
   margin: 0 auto;
   position: relative;
   width: 280px;
+
   @include md {
     padding-bottom: 8px;
     width: 660px;
     padding-top: 74px;
   }
+
   @include lg {
     width: 940px;
     padding: 0;
@@ -34,12 +37,16 @@
   text-align: center;
   color: #283645;
   padding: 40px 58px 32px 58px;
+
   @include md {
     padding: 50px 20px 47px 20px;
     font-size: 40px;
     line-height: 48px;
   }
+
   @include lg {
+    padding-top: 66px;
+    padding-bottom: 77px;
     font-size: 50px;
     line-height: 60px;
   }
@@ -47,8 +54,10 @@
 
 .advantages__lead-text {
   margin: 0;
+
   &:first-child {
     margin-bottom: 29px;
+
     @include md {
       margin-bottom: 0;
     }
@@ -58,6 +67,7 @@
 .advantages__item {
   @include lg {
     width: 298px;
+
     &:first-child {
       margin-right: 6px;
     }
@@ -67,11 +77,13 @@
 .advantages__list {
   @include list-none;
   text-align: center;
+
   @include md {
     width: 310px;
     text-align: left;
     margin: 0 20px 0 auto;
   }
+
   @include lg {
     display: flex;
     flex-direction: row;
@@ -84,6 +96,7 @@
 
 .advantages__screen-image {
   display: none;
+
   @include lg {
     display: inline-block;
     margin-bottom: 49px;
@@ -95,10 +108,12 @@
   z-index: 0;
   bottom: -42px;
   right: 60px;
+
   @include md {
     bottom: 0;
     left: 21px;
   }
+
   @include lg {
     display: none;
   }
@@ -107,9 +122,11 @@
 .advantages__description {
   margin: 0;
   margin-bottom: 31px;
+
   @include md {
     margin-bottom: 34px;
   }
+
   @include lg {
     font-size: 18px;
     line-height: 30px;
@@ -121,6 +138,7 @@
   font-size: 18px;
   margin: 0;
   margin-bottom: 12px;
+
   @include lg {
     font-size: 30px;
     line-height: 30px;

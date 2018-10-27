@@ -91,6 +91,7 @@
 
 .application-type__list {
   @include list-none;
+
   @include lg {
     padding-left: 43px;
   }

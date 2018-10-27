@@ -36,7 +36,7 @@
   font-weight: 300;
   text-align: center;
   color: #283645;
-  padding: 40px 58px 32px 58px;
+  padding: 40px 58px 34px 58px;
 
   @include md {
     padding: 50px 20px 47px 20px;
@@ -115,6 +115,10 @@
   }
 
   @include lg {
+    display: none;
+  }
+
+  &--hidden {
     display: none;
   }
 }

@@ -15,7 +15,7 @@
 .contacts__list {
   width: 280px;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 
   @include md {
     display: flex;
@@ -55,7 +55,7 @@
 }
 
 .contacts__item {
-  margin-bottom: 19px;
+  margin-bottom: 22px;
 
   &--telephone {
     @include md {

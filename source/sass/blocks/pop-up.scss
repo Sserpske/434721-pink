@@ -85,7 +85,7 @@
   }
 }
 
-.form__no-submitted {
+.pop-up--no-submitted {
   top: 1166px;
 
   @include md {
@@ -113,7 +113,7 @@
 }
 
 
-.form__submitted {
+.pop-up--submitted {
   top: 1642px;
   padding-bottom: 0;
 

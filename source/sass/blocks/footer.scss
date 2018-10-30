@@ -20,6 +20,14 @@
     padding-top: 50px;
     padding-bottom: 67px;
   }
+
+  &--inner {
+    .footer__social {
+      @include lg {
+        margin-left: 26px;
+      }
+    }
+  }
 }
 
 .footer--main-page {
@@ -53,7 +61,7 @@
 }
 
 .footer__pink-logo {
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 
   svg {
     fill: $blue;
@@ -75,11 +83,11 @@
 
 .footer__social {
   margin-bottom: 34px;
-  margin-left: 5px;
+  margin-left: 8px;
 
   @include md {
     margin-bottom: 0;
-    margin-right: 6px;
+    margin-right: 10px;
     padding-top: 3px;
   }
 

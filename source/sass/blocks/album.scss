@@ -93,7 +93,7 @@
 
       @include lg {
         top: 54px;
-        right: 130px;
+        right: 10px;
       }
     }
   }
@@ -114,8 +114,8 @@
   }
 
   @include lg {
-    width: 100%;
-    left: 0;
+    width: 125%;
+    left: -120px;
   }
 }
 

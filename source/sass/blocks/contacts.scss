@@ -28,7 +28,7 @@
   @include lg {
     width: 888px;
     justify-content: space-between;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
   }
 }
 
@@ -172,7 +172,7 @@
   }
 
   @include lg {
-    min-height: 502px;
+    min-height: 498px;
   }
 
   iframe {

@@ -75,6 +75,7 @@
 
 .footer__social {
   margin-bottom: 34px;
+  margin-left: 5px;
 
   @include md {
     margin-bottom: 0;
@@ -84,7 +85,7 @@
 
   @include lg {
     margin-right: 0;
-    margin-left: 30px;
+    margin-left: 20px;
   }
 }
 
@@ -96,7 +97,7 @@
   border-radius: 25px;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-right: 6px;
+  margin-right: 9px;
 
   &:hover {
     border-color: $blue;

@@ -3,11 +3,16 @@
   background-image: url("#{$path}bg-triangle-white.svg");
   background-repeat: no-repeat;
   width: 100%;
-  background-size: contain;
+  background-size: 107%;
   background-position: -5px 0;
+
+  @include md {
+    background-size: 100%;
+  }
 
   @include lg {
     padding-bottom: 5px;
+    background-size: 107%;
   }
 }
 

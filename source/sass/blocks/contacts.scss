@@ -86,6 +86,7 @@
 
   &--mail {
     margin-bottom: 22px;
+    margin-left: 4px;
 
     .contacts__text {
       margin-bottom: 3px;
@@ -162,6 +163,8 @@
 
     @include lg {
       height: 170px;
+      background-size: 109%;
+      background-position: center top;
     }
   }
 

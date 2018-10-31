@@ -71,6 +71,26 @@
     &:first-child {
       margin-right: 6px;
     }
+
+    &:nth-child(2) {
+      .advantages__title {
+        margin-right: 5px;
+      }
+
+      .advantages__description {
+        margin-right: 7px;
+      }
+    }
+
+    &:last-child {
+      .advantages__title {
+        margin-right: 3px;
+      }
+
+      .advantages__description {
+        margin-right: 4px;
+      }
+    }
   }
 }
 

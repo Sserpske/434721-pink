@@ -140,13 +140,14 @@
   justify-content: space-between;
   margin-bottom: 17px;
   align-items: center;
-  padding: 8px 0 16px 2px;
+  padding: 9px 0 16px 2px;
   border-bottom: 1px solid #dddfe0;
 
   @include sm {
     flex-direction: column;
     border-bottom: none;
     margin-bottom: 51px;
+    padding-top: 8px;
   }
 
   @include lg {

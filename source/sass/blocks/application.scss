@@ -9,7 +9,7 @@
   min-height: 396px;
   background-image: url("#{$path}iphone-hand-mobile@1x.png"), url("#{$path}bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 5% bottom, center bottom;
+  background-position: calc(50% - 31px) bottom, center bottom;
   background-size: auto, cover;
 
   @include retina {

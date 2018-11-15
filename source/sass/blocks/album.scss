@@ -15,6 +15,7 @@
   .album__photo:last-child,
   .album__photo:nth-last-child(2),
   .album__photo:nth-last-child(3) {
+
     @include lg {
       margin-bottom: 0;
     }

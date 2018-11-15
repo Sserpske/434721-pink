@@ -20,6 +20,14 @@
     padding-top: 50px;
     padding-bottom: 67px;
   }
+
+  &--inner {
+    .footer__social {
+      @include lg {
+        margin-left: 26px;
+      }
+    }
+  }
 }
 
 .footer--main-page {
@@ -53,7 +61,7 @@
 }
 
 .footer__pink-logo {
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 
   svg {
     fill: $blue;
@@ -74,17 +82,18 @@
 }
 
 .footer__social {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
+  margin-left: 8px;
 
   @include md {
     margin-bottom: 0;
-    margin-right: 6px;
-    padding-top: 3px;
+    margin-right: 10px;
+    margin-top: 4px;
   }
 
   @include lg {
     margin-right: 0;
-    margin-left: 30px;
+    margin-left: 20px;
   }
 }
 
@@ -96,7 +105,7 @@
   border-radius: 25px;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-right: 6px;
+  margin-right: 9px;
 
   &:hover {
     border-color: $blue;

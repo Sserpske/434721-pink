@@ -3,11 +3,16 @@
   background-image: url("#{$path}bg-triangle-white.svg");
   background-repeat: no-repeat;
   width: 100%;
-  background-size: contain;
+  background-size: 107%;
   background-position: -5px 0;
+
+  @include md {
+    background-size: 100%;
+  }
 
   @include lg {
     padding-bottom: 5px;
+    background-size: 107%;
   }
 }
 
@@ -70,6 +75,26 @@
 
     &:first-child {
       margin-right: 6px;
+    }
+
+    &:nth-child(2) {
+      .advantages__title {
+        margin-right: 5px;
+      }
+
+      .advantages__description {
+        margin-right: 7px;
+      }
+    }
+
+    &:last-child {
+      .advantages__title {
+        margin-right: 3px;
+      }
+
+      .advantages__description {
+        margin-right: 4px;
+      }
     }
   }
 }

@@ -28,7 +28,7 @@
   @include lg {
     width: 888px;
     justify-content: space-between;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
   }
 }
 
@@ -86,6 +86,7 @@
 
   &--mail {
     margin-bottom: 22px;
+    margin-left: 4px;
 
     .contacts__text {
       margin-bottom: 3px;
@@ -162,6 +163,8 @@
 
     @include lg {
       height: 170px;
+      background-size: 109%;
+      background-position: center top;
     }
   }
 
@@ -172,7 +175,7 @@
   }
 
   @include lg {
-    min-height: 502px;
+    min-height: 498px;
   }
 
   iframe {

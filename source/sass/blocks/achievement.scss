@@ -6,6 +6,10 @@
     order: 4;
     background-color: transparent;
   }
+
+  @include lg {
+    padding-bottom: 47px;
+  }
 }
 
 .achievement__wrapper {
@@ -17,7 +21,7 @@
   @include md {
     width: 620px;
     border: 2px solid #e5e5e5;
-    padding: 0 20px 56px 57px;
+    padding: 0 20px 52px 57px;
   }
 
   @include lg {
@@ -91,6 +95,10 @@
 .achievement__item {
   &:not(:last-child) {
     margin-bottom: 52px;
+
+    @include md {
+      margin-bottom: 53px;
+    }
   }
 
   @include lg {

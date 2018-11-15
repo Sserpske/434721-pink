@@ -13,7 +13,7 @@
   </head>
   <body>
     <header class="page-header">
-      <!-- page-header__menu--closed - меню закрыто, page-header__menu--opened - меню открыто -->
+      <!-- page-header--menu-closed - меню закрыто, page-header--menu-opened - меню открыто -->
       <div class="page-header__out-wrapper">
         <div class="page-header__logo-wrapper container">
           <a href="index.html" class="page-header__logo"><span class="visually-hidden">Логотип Pink</span>
@@ -22,8 +22,8 @@
             <svg class="page-header__logo-desktop" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375"><use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use></svg>
           </a>
           <button class="page-header__toggle btn" type="button"><span class="visually-hidden">Открыть меню</span>
-            <svg class="page-header__svg--opened" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867"><use xlink:href="img/sprite.svg#icon-menu-cross"></use></svg>
-            <svg class="page-header__svg--closed" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007"><use xlink:href="img/sprite.svg#icon-menu-burger"></use></svg>
+            <svg class="page-header__svg-opened" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867"><use xlink:href="img/sprite.svg#icon-menu-cross"></use></svg>
+            <svg class="page-header__svg-closed" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007"><use xlink:href="img/sprite.svg#icon-menu-burger"></use></svg>
           </button>
         </div>
         <nav class="main-nav">
@@ -140,14 +140,14 @@
           </div>
         </div>
       </form>
-      <div class="form__submitted pop-up">
+      <div class="pop-up pop-up--submitted">
         <p class="pop-up__title">Ваша заявка отправлена</p>
         <p class="pop-up__text">Спасибо за&nbsp;ваше участие, ваша заявка уже поступила к&nbsp;нам. В ближайшее время мы рассмотрим ее&nbsp;и оповестим&nbsp;вас.</p>
         <div class="pop-up__button-wrapper">
           <button class="pop-up__close btn">ЗАКРЫТЬ ОКНО</button>
         </div>
       </div>
-      <div class="form__no-submitted pop-up">
+      <div class="form__no-submitted pop-up pop-up--no-submitted">
         <p class="pop-up__title">Что-то пошло не&nbsp;так!</p>
         <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить</p>
         <div class="pop-up__button-wrapper pop-up__button-wrapper--submit">
@@ -155,10 +155,10 @@
         </div>
       </div>
     </main>
-    <footer class="footer">
-      <a href="#" class="footer__pink-logo"><span class="visually-hidden">Логотип Pink</span>
-        <svg class="footer__pink-svg--mobile" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375"><use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use></svg>
-        <svg class="footer__pink-svg--desktop" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375"><use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use></svg>
+    <footer class="footer footer--inner">
+      <a href="index.html" class="footer__pink-logo"><span class="visually-hidden">Логотип Pink</span>
+        <svg class="footer__pink-svg footer__pink-svg--mobile" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375"><use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use></svg>
+        <svg class="footer__pink-svg footer__pink-svg--desktop" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375"><use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use></svg>
       </a>
       <div class="footer__social">
         <a href="#" class="footer__social-link footer__social-link--twitter"><span class="visually-hidden">twitter</span></a>
